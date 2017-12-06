@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RobotArm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\Qt\;CMake Files\..\..\..\..\Qt\Qt5.7.0\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Quick\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Network\;CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\;CMake Files\build\;CMake Files\build\gmlib\;CMake Files\build\gmlib\lib\;CMake Files\build\gmlib\lib\cmake\;CMake Files\build\gmlib\lib\cmake\GMlib-0.6.9\;CMake Files\application\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RobotArm">
+				<Option output="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/bin/RobotArm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGM_GL_DEBUG"/>
+					<Add option="-DGM_STREAM"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="C:/Users/Admin/Desktop/RobotArm/build/gmlib/include"/>
+					<Add directory="C:/Users/Admin/Desktop/RobotArm/include"/>
+					<Add directory="C:/Program Files (x86)/glew/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtQuick"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtQml"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtNetwork"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 RobotArm"/>
+					<CompileFile command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RobotArm/fast">
+				<Option output="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/bin/RobotArm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGM_GL_DEBUG"/>
+					<Add option="-DGM_STREAM"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_QUICK_LIB"/>
+					<Add option="-DQT_QML_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="C:/Users/Admin/Desktop/RobotArm/build/gmlib/include"/>
+					<Add directory="C:/Users/Admin/Desktop/RobotArm/include"/>
+					<Add directory="C:/Program Files (x86)/glew/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtQuick"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtQml"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtNetwork"/>
+					<Add directory="C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Qt/Qt5.7.0/Tools/mingw530_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 RobotArm/fast"/>
+					<CompileFile command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Qt5.7.0/Tools/mingw530_32/bin/mingw32-make.exe -f &quot;C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/application.qrc">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/fboinsgrenderer.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/fboinsgrenderer.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/gmlibwrapper.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/gmlibwrapper.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/guiapplication.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/guiapplication.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/main.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/textures/texture.bmp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/utils.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/window.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/window.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/defaulthidmanager.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/defaulthidmanager.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidaction.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidaction.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidbinding.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidbinding.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidinput.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidinput.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidinputevent.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidinputevent.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidkbmouseinput.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidkbmouseinput.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanager.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanager.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanagertreemodel.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanagertreemodel.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/standardhidmanager.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/hidmanager/standardhidmanager.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/arm.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/controller.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/pen.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/robotarm.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/scenario.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/simulator.h">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/arm.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/controller.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/lowerarm.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/pen.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/robotarm.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/scenario.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/simulator.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Quick/Qt5QuickConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Quick/Qt5Quick_ContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Quick\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5QmlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5QmlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5QmlConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QLocalClientConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebugServerFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQmlDebuggerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQmlInspectorServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQmlNativeDebugConnectorFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQmlProfilerServiceFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QQuickProfilerAdapterFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Qml/Qt5Qml_QTcpServerConnectionFactory.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Qml\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Network/Qt5Network_QNativeWifiEnginePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Network\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QDDSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/build/gmlib/lib/cmake/GMlib-0.6.9/GMlibConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\build\gmlib\lib\cmake\GMlib-0.6.9\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/build/gmlib/lib/cmake/GMlib-0.6.9/GMlibConfig.cmake">
+			<Option virtualFolder="CMake Files\build\gmlib\lib\cmake\GMlib-0.6.9\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/application/application.qrc">
+			<Option virtualFolder="CMake Files\application\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

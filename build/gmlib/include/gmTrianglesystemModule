@@ -1,0 +1,6 @@
+// Generated (do not touch!!)
+
+#include "trianglesystem/gmtrianglesystem"
+#include "trianglesystem/gmtrianglefacetsdefaultvisualizer"
+#include "trianglesystem/gmtrianglefacetsvisualizer"
+#include "trianglesystem/gmtrianglefacetsvoronoivisualizer"

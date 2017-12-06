@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/gmglobal.h
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmcolor.cpp
+gmcolor.h
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmcolor.h
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmcolor.h
+gmstream.h
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmstream.h
+gmutils.h
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmutils.h
+cmath
+-
+algorithm
+-
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmstream.cpp
+gmstream.h
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmstream.h
+memory
+-
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmstream.h
+iostream
+-
+
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/utils/gmutils.h
+../gmglobal.h
+C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/gmglobal.h
+functional
+-
+cassert
+-
+limits
+-
+cmath
+-
+

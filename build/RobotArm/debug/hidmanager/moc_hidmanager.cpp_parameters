@@ -1,0 +1,10 @@
+-IC:/Users/Admin/Desktop/RobotArm/build/gmlib/include
+-IC:/Users/Admin/Desktop/RobotArm/include
+-IC:/Program Files (x86)/glew/include
+-DGM_GL_DEBUG
+-DGM_STREAM
+-DGLEW_STATIC
+-DWIN32
+-o
+C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/hidmanager/moc_hidmanager.cpp
+C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanager.h

@@ -1,0 +1,1 @@
+../../../lib/libgmopengl.dll.a ../../../lib/libgmcore.dll.a "C:/Program Files (x86)/glew/lib/libglew32.dll.a" -lglu32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
