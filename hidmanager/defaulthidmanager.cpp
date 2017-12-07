@@ -379,6 +379,7 @@ void DefaultHidManager::heSelectRobotArm() {
 
         auto obj = (*scene)[i];
 
+        std::cout<<obj->getIdentity();
         if( obj->getIdentity() == "Controller") {
 
             _robotarm = dynamic_cast<Controller*>(obj);
@@ -391,6 +392,8 @@ void DefaultHidManager::heSelectRobotArm() {
 void DefaultHidManager::heReturnToStart() {
 
 std::cout<<"Return to start";
+if(_robotarm_selected)
+_robotarm->reset =true;
 }
 
 void DefaultHidManager::heTurnLeft(){
@@ -423,14 +426,15 @@ void DefaultHidManager::heTurnUp() {
 
 void DefaultHidManager::heTurnDown() {
 
-    if(_robotarm_selected) {
-         std::cout<<"Turning down";
-        _robotarm->turning_up = false;
-        _robotarm->turning_right = false;
-        _robotarm->turning_left = false;
-        _robotarm->turning_down = true;
-        std::cout<<"Turning down";
-    }
+    //_robotarm->turn_down();
+//    if(_robotarm_selected) {
+//         std::cout<<"Turning down";
+//        _robotarm->turning_up = false;
+//        _robotarm->turning_right = false;
+//        _robotarm->turning_left = false;
+//        _robotarm->turning_down = true;
+//        std::cout<<"Turning down";
+//    }
 }
 
 
@@ -684,9 +688,6 @@ void DefaultHidManager::setupDefaultHidBindings() {
                          "Replot with \"low\" resolution",
                          this, SLOT(heReplotQuickLow()),
                          OGL_TRIGGER);
-
-
-
 
 
   // Rendering

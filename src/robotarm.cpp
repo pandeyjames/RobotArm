@@ -4,7 +4,9 @@
 RobotArm::RobotArm(GMlib::Point<float, 3> pos){
     makeBody(pos);
     makeArm(pos);
-    //makePen(GMlib::Vector<float, 3>(10.2,10.2,21.5));
+    makeBoard();
+    makeSph(pos);
+
 }
 
 void RobotArm::makeBody(GMlib::Point<float, 3> pos){
@@ -12,16 +14,14 @@ void RobotArm::makeBody(GMlib::Point<float, 3> pos){
     body = std::make_shared<GMlib::PCylinder<float>>(1,2.5,1.5);
 }
 
+void RobotArm::makeSph(GMlib::Point<float, 3> pos){
+    sph = std::make_shared<GMlib::PSphere<float>>(0.5f);
+}
+
 void RobotArm::makeArm(GMlib::Point<float, 3> pos) {
     for(unsigned int i = 0; i < 1; i++)  arm.push_back(std::make_shared<Arm> (pos, false));
 }
 
-//void RobotArm::makePen(GMlib::Point<float, 3> pos)
-//{
-//    penbody = std::make_shared<GMlib::PCylinder<float>>(0.2,0.2,4.5);
-//    pentip = std::make_shared<GMlib::PCone<float>>(0.1,0.5);
-
-//}
 
 void RobotArm::setMaterial(const GMlib::Material &m1,const GMlib::Material &m2){
     body->setMaterial(m1);
@@ -32,11 +32,11 @@ void RobotArm::setMaterial(const GMlib::Material &m1,const GMlib::Material &m2){
 
 void RobotArm::replot(int m1, int m2, int d1, int d2){
     body->replot(m1,m2,d1,d2);
-//    penbody->replot(m1,m2,d1,d2);
     for(unsigned int i = 0; i < arm.size(); i++) {
         arm[i]->replot(m1,m2,d1,d2);
     }
-//    pentip->replot(m1,m2,d1,d2);
+    board->replot(m1,m2,d1,d2);
+    sph->replot(10,10,1,1);;
 }
 
 void RobotArm::toggleDefaultVisualizer(){
@@ -44,8 +44,8 @@ void RobotArm::toggleDefaultVisualizer(){
     for(unsigned int i = 0; i < arm.size(); i++) {
         arm[i]->toggleDefaultVisualizer();
     }
-//    penbody->toggleDefaultVisualizer();
-//    pentip->toggleDefaultVisualizer();
+    sph->toggleDefaultVisualizer();
+    board->toggleDefaultVisualizer();
 }
 
 void RobotArm::insert(GMlib::Scene &scene){
@@ -53,29 +53,44 @@ void RobotArm::insert(GMlib::Scene &scene){
     reArrange();
     armLinks();
     scene.insert(body.get());
-    //scene.insert(penbody.get());
+    scene.insert(board.get());
+    scene.insert(sph.get());
 }
 
 void RobotArm::reArrange(){
     body->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
     body->rotateGlobal( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ));
-//    penbody->translateGlobal(GMlib::Vector<float,3>(-6.4f, 0.0f, -5.0f ));
-//    penbody->rotateGlobal( GMlib::Angle(180), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ));
-//    pentip->rotate(GMlib::Angle(180), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ));
-//    pentip->translate(GMlib::Vector<float,3>(0.0f, 0.0f, 2.7f ));
+    //body->translate(GMlib::Vector<float,3>(-1.0f, 0.0f, 0.0f ));
+    sph->translate(GMlib::Vector<float,3>(-7,0,1));
+}
+
+void RobotArm::getBoardPosition()
+{
+    auto present = sph->getMatrixGlobal();
+    auto sph_global = sph->getGlobalPos();
+
+    auto present_inverted = present;
+    present_inverted.invertOrthoNormal(); //scene to base
+
+    board_base_pos = present_inverted*sph_global;
 }
 
 void RobotArm::armLinks(){
     for(unsigned int i = 0; i <arm.size(); i++) {
         body->insert(arm[i]->getJoints()[0].get());
         body->insert((arm[i]->arm_base).get());
-//        arm[i]->arm_base->insert(penbody.get());
     }
-    //std::cout<<"size= "<<arm.size();
-    //body->insert(penbody.get());
-//    penbody->insert(pentip.get());
+    //body->insert(sph.get());
 }
 
+void RobotArm::makeBoard()
+{
+    board = std::make_shared<GMlib::PPlane<float>> (
+                      GMlib::Point<float, 3> (-16.0f,-5.0f,1.0f),
+                      GMlib::Vector<float, 3>(14.0f,0.0f,0.0f),
+                      GMlib::Vector<float, 3>(0.0f,10.0f,0.0f));
+    board->setMaterial(GMlib::Material(1,0,0));
+}
 
 void RobotArm::localSimulate(double dt){
     std::cout<<"localsimulate from robotarm";

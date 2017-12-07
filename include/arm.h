@@ -3,15 +3,15 @@
 
 #include<gmParametricsModule>
 #include<memory>
-#include "lowerarm.h"
+#include "griper.h"
 
 struct IKAngles {
 
-    GMlib::Angle shoulderAngle;
-    GMlib::Angle UarmAngle;
-    GMlib::Angle LarmAngle;
-    IKAngles(GMlib::Angle shoulder, GMlib::Angle upperarm, GMlib::Angle lowerarm) {shoulderAngle = shoulder; UarmAngle = upperarm; LarmAngle = lowerarm; }
-    void operator=(IKAngles angles){shoulderAngle = angles.shoulderAngle; UarmAngle = angles.UarmAngle; LarmAngle = angles.LarmAngle;}
+    GMlib::Angle uAngle;
+    GMlib::Angle lAngle;
+    GMlib::Angle gAngle;
+    IKAngles(GMlib::Angle upperarm, GMlib::Angle lowerarm, GMlib::Angle griper) {uAngle = upperarm; lAngle = lowerarm; gAngle = griper; }
+    void operator=(IKAngles angles){uAngle = angles.uAngle; lAngle = angles.lAngle; gAngle = angles.gAngle;}
 };
 
 
@@ -45,26 +45,26 @@ class Arm: public  GMlib::SceneObject {
 
 
         std::vector<std::shared_ptr<GMlib::PSphere<float>>> getJoints();
-        std::shared_ptr<GMlib::PCylinder<float>> getShoulder();
+        std::shared_ptr<GMlib::PCylinder<float>> getLowerArm();
         std::shared_ptr<GMlib::PCylinder<float>> getUpperArm();
-        std::shared_ptr<LowerArm> getLowerArm();
+        std::shared_ptr<Griper> getGriper();
+        std::shared_ptr<GMlib::PSphere<float>> getArmBase();
 
 
     protected:
-        std::shared_ptr< GMlib::PCylinder<float>> shoulder;
-        std::shared_ptr<GMlib::PCylinder<float>> upperarm;
+        std::shared_ptr< GMlib::PCylinder<float>> upperarm;
+        std::shared_ptr<GMlib::PCylinder<float>> lowerarm;
         std::shared_ptr<GMlib::PCircle<float>> circle;
-        std::shared_ptr<LowerArm> lowerarm;
+        std::shared_ptr<Griper> griper;
         std::vector<std::shared_ptr< GMlib::PSphere<float>>> joints;    // 3
         std::shared_ptr<GMlib::PCylinder<float>> body;
         std::shared_ptr<GMlib::PCylinder<float>> penbody;
         std::shared_ptr<GMlib::PCone<float>> pentip;
 
-
     private:
-        void makeShoulder();
-        void makeUpperArm();
         void makeLowerArm();
+        void makeUpperArm();
+        void makeGriper();
         void makeJoints();
         void reArrangePosition();
         void link();

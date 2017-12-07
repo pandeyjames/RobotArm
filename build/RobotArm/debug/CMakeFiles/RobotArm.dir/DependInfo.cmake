@@ -32,7 +32,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/qrc_application.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/qrc_application.cpp.obj"
   "C:/Users/Admin/Desktop/RobotArm/src/arm.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/arm.cpp.obj"
   "C:/Users/Admin/Desktop/RobotArm/src/controller.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/controller.cpp.obj"
-  "C:/Users/Admin/Desktop/RobotArm/src/lowerarm.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj"
+  "C:/Users/Admin/Desktop/RobotArm/src/griper.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/griper.cpp.obj"
   "C:/Users/Admin/Desktop/RobotArm/src/pen.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/pen.cpp.obj"
   "C:/Users/Admin/Desktop/RobotArm/src/robotarm.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj"
   "C:/Users/Admin/Desktop/RobotArm/src/scenario.cpp" "C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug/CMakeFiles/RobotArm.dir/src/scenario.cpp.obj"

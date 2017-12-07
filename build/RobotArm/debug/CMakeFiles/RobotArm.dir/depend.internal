@@ -3008,7 +3008,7 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/hidmanager/standardhidmanager.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
- C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/pen.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/scenario.h
@@ -5916,12 +5916,12 @@ CMakeFiles/RobotArm.dir/src/arm.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
- C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/src/arm.cpp
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj
  ../../../include/arm.h
  ../../../include/controller.h
- ../../../include/lowerarm.h
+ ../../../include/griper.h
  ../../../include/pen.h
  ../../../include/robotarm.h
  ../../gmlib/include/core/containers/gmarray.h
@@ -6357,8 +6357,8 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj
- ../../../include/lowerarm.h
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj
+ ../../../include/griper.h
  ../../gmlib/include/core/containers/gmarray.h
  ../../gmlib/include/core/containers/gmdmatrix.h
  ../../gmlib/include/core/containers/gmdvector.h
@@ -6791,7 +6791,7 @@ CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorgridvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
- C:/Users/Admin/Desktop/RobotArm/src/lowerarm.cpp
+ C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
 CMakeFiles/RobotArm.dir/src/pen.cpp.obj
  ../../../include/pen.h
  ../../gmlib/include/core/containers/gmarray.h
@@ -7661,7 +7661,7 @@ CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
- C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/pen.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/src/robotarm.cpp
@@ -8294,7 +8294,7 @@ CMakeFiles/RobotArm.dir/src/scenario.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmsurroundingspherevisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
- C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/pen.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/scenario.h
@@ -8831,7 +8831,7 @@ CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
- C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/pen.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/simulator.h

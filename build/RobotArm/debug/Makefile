@@ -878,32 +878,32 @@ src/controller.cpp.s:
 	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
-src/lowerarm.obj: src/lowerarm.cpp.obj
+src/griper.obj: src/griper.cpp.obj
 
-.PHONY : src/lowerarm.obj
+.PHONY : src/griper.obj
 
 # target to build an object file
-src/lowerarm.cpp.obj:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj
-.PHONY : src/lowerarm.cpp.obj
+src/griper.cpp.obj:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/griper.cpp.obj
+.PHONY : src/griper.cpp.obj
 
-src/lowerarm.i: src/lowerarm.cpp.i
+src/griper.i: src/griper.cpp.i
 
-.PHONY : src/lowerarm.i
+.PHONY : src/griper.i
 
 # target to preprocess a source file
-src/lowerarm.cpp.i:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/lowerarm.cpp.i
-.PHONY : src/lowerarm.cpp.i
+src/griper.cpp.i:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/griper.cpp.i
+.PHONY : src/griper.cpp.i
 
-src/lowerarm.s: src/lowerarm.cpp.s
+src/griper.s: src/griper.cpp.s
 
-.PHONY : src/lowerarm.s
+.PHONY : src/griper.s
 
 # target to generate assembly for a file
-src/lowerarm.cpp.s:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/lowerarm.cpp.s
-.PHONY : src/lowerarm.cpp.s
+src/griper.cpp.s:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/griper.cpp.s
+.PHONY : src/griper.cpp.s
 
 src/pen.obj: src/pen.cpp.obj
 
@@ -1106,9 +1106,9 @@ help:
 	@echo ... src/controller.obj
 	@echo ... src/controller.i
 	@echo ... src/controller.s
-	@echo ... src/lowerarm.obj
-	@echo ... src/lowerarm.i
-	@echo ... src/lowerarm.s
+	@echo ... src/griper.obj
+	@echo ... src/griper.i
+	@echo ... src/griper.s
 	@echo ... src/pen.obj
 	@echo ... src/pen.i
 	@echo ... src/pen.s

@@ -212,7 +212,7 @@
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/controller.h">
 			<Option target="RobotArm"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h">
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/griper.h">
 			<Option target="RobotArm"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/pen.h">
@@ -233,7 +233,7 @@
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/controller.cpp">
 			<Option target="RobotArm"/>
 		</Unit>
-		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/lowerarm.cpp">
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/griper.cpp">
 			<Option target="RobotArm"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/pen.cpp">

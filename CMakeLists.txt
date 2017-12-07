@@ -111,7 +111,7 @@ set( HDRS
   include/scenario.h
   include/arm.h
   include/robotarm.h
-  include/lowerarm.h
+  include/griper.h
   include/simulator.h
   include/controller.h
   include/pen.h
@@ -138,7 +138,7 @@ set( SRCS
   src/scenario.cpp
   src/arm.cpp
   src/robotarm.cpp
-  src/lowerarm.cpp
+  src/griper.cpp
   src/simulator.cpp
   src/controller.cpp
   src/pen.cpp

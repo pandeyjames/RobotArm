@@ -11,8 +11,8 @@ gmParametricsModule
 -
 memory
 -
-lowerarm.h
-../../../include/lowerarm.h
+griper.h
+../../../include/griper.h
 
 ../../../include/controller.h
 gmParametricsModule
@@ -24,7 +24,7 @@ vector
 memory
 -
 
-../../../include/lowerarm.h
+../../../include/griper.h
 gmParametricsModule
 -
 memory
@@ -43,8 +43,8 @@ memory
 -
 arm.h
 ../../../include/arm.h
-lowerarm.h
-../../../include/lowerarm.h
+griper.h
+../../../include/griper.h
 pen.h
 ../../../include/pen.h
 
@@ -6113,8 +6113,8 @@ gmParametricsModule
 -
 memory
 -
-lowerarm.h
-C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+griper.h
+C:/Users/Admin/Desktop/RobotArm/include/griper.h
 
 C:/Users/Admin/Desktop/RobotArm/include/controller.h
 gmParametricsModule
@@ -6126,7 +6126,7 @@ vector
 memory
 -
 
-C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+C:/Users/Admin/Desktop/RobotArm/include/griper.h
 gmParametricsModule
 -
 memory
@@ -6145,8 +6145,8 @@ memory
 -
 arm.h
 C:/Users/Admin/Desktop/RobotArm/include/arm.h
-lowerarm.h
-C:/Users/Admin/Desktop/RobotArm/include/lowerarm.h
+griper.h
+C:/Users/Admin/Desktop/RobotArm/include/griper.h
 pen.h
 C:/Users/Admin/Desktop/RobotArm/include/pen.h
 
@@ -6178,9 +6178,9 @@ C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
 controller.h
 C:/Users/Admin/Desktop/RobotArm/src/controller.h
 
-C:/Users/Admin/Desktop/RobotArm/src/lowerarm.cpp
-lowerarm.h
-C:/Users/Admin/Desktop/RobotArm/src/lowerarm.h
+C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
+griper.h
+C:/Users/Admin/Desktop/RobotArm/src/griper.h
 
 C:/Users/Admin/Desktop/RobotArm/src/pen.cpp
 pen.h

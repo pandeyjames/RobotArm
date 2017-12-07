@@ -533,29 +533,29 @@ CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj.provides: CMakeFiles/RobotArm.dir/s
 CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj.provides.build: CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj
 
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj: ../../../src/lowerarm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\src\lowerarm.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\src\lowerarm.cpp
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../src/griper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/RobotArm.dir/src/griper.cpp.obj"
+	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\src\griper.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\src\griper.cpp
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RobotArm.dir/src/lowerarm.cpp.i"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\RobotArm\src\lowerarm.cpp > CMakeFiles\RobotArm.dir\src\lowerarm.cpp.i
+CMakeFiles/RobotArm.dir/src/griper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RobotArm.dir/src/griper.cpp.i"
+	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\RobotArm\src\griper.cpp > CMakeFiles\RobotArm.dir\src\griper.cpp.i
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RobotArm.dir/src/lowerarm.cpp.s"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\RobotArm\src\lowerarm.cpp -o CMakeFiles\RobotArm.dir\src\lowerarm.cpp.s
+CMakeFiles/RobotArm.dir/src/griper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RobotArm.dir/src/griper.cpp.s"
+	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\RobotArm\src\griper.cpp -o CMakeFiles\RobotArm.dir\src\griper.cpp.s
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.requires:
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj.requires:
 
-.PHONY : CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.requires
+.PHONY : CMakeFiles/RobotArm.dir/src/griper.cpp.obj.requires
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.provides: CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.provides.build
-.PHONY : CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.provides
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj.provides: CMakeFiles/RobotArm.dir/src/griper.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/griper.cpp.obj.provides.build
+.PHONY : CMakeFiles/RobotArm.dir/src/griper.cpp.obj.provides
 
-CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.provides.build: CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj.provides.build: CMakeFiles/RobotArm.dir/src/griper.cpp.obj
 
 
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
@@ -952,7 +952,7 @@ RobotArm_OBJECTS = \
 "CMakeFiles/RobotArm.dir/src/scenario.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/arm.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj" \
-"CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj" \
+"CMakeFiles/RobotArm.dir/src/griper.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/simulator.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/controller.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/pen.cpp.obj" \
@@ -989,7 +989,7 @@ bin/RobotArm.exe: CMakeFiles/RobotArm.dir/application/main.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/scenario.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/arm.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj
-bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj
+bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/griper.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/controller.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/pen.cpp.obj
@@ -1040,7 +1040,7 @@ CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/application/main.cpp.o
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/scenario.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/arm.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj.requires
-CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj.requires
+CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/griper.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/simulator.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/controller.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/pen.cpp.obj.requires

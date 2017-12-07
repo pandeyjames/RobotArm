@@ -81,7 +81,7 @@ private:
 
   std::queue<std::pair<const HidAction*,HidInputEvent::HidInputParams>>   _ogl_actions;
   Controller*                       _robotarm;
-  bool                              _robotarm_selected = true;
+  bool                              _robotarm_selected = false;
   Scenario*                         _scenario;
 
 };

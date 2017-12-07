@@ -16,8 +16,10 @@ public:
     void turn_right();
     void turn_left();
     void addRobotArm(std::shared_ptr<RobotArm> robotarm);
-    void move_from_A_to_B();
+    void move_from_A_to_B(GMlib::APoint<float, 3> A,GMlib::APoint<float, 3> B);
     void change_simulation(int i);
+    void createSquare(float len);
+    void createCircle(float r);
 
     void return_to_start();
 
@@ -25,6 +27,7 @@ public:
     bool turning_right = false;
     bool turning_down = false;
     bool turning_up = false;
+    bool reset = false;
 
 
 
@@ -39,14 +42,16 @@ private:
 
     void localSimulate(double dt) override;
     void run_inverse_kinematicts();
+    void getDrawPosition();
     void update_target_positions(GMlib::APoint<float,3> &tip_position, std::vector<GMlib::Point<float,3>> &target_positions, int i, int j);
-    void update_angles(std::vector<std::vector<IKAngles>> &angles,std::vector<GMlib::Point<float,3>> &target_positions,int i, int j);
+    void update_angles(std::vector<std::vector<IKAngles>> &angles,std::vector<GMlib::Point<float,3>> &target_positions, int i, int j);
     std::shared_ptr<RobotArm> robotarm;
     std::shared_ptr<GMlib::PCylinder<float>> body;
     std::vector<std::shared_ptr<Arm>> arm;
     std::vector<std::shared_ptr<Pen>> pen;
     std::shared_ptr<GMlib::PCylinder<float>> penbody;
     std::shared_ptr<GMlib::PCone<float>> pentip;
+    std::shared_ptr<GMlib::PSphere<float>> sph;
     std::vector<GMlib::Point<float,3>> turn_left_target_positions;
     std::vector<GMlib::Point<float,3>> move_target_positions;
     GMlib::Point<float,3> move_tip_position;
@@ -55,6 +60,7 @@ private:
     std::vector<GMlib::Point<float,3>> turn_right_target_positions;
     std::vector<std::vector<IKAngles>> turn_right_angles;  //arm/step (3 angles)
     std::vector<std::vector<IKAngles>> move_angles;
+
 
     int active_arm = 0;
     bool rotate_body = false;
@@ -68,8 +74,7 @@ private:
     double rotation_speed= 2.0;
     double translation_speed=1.0;
     bool moving = false;
-
-    bool reset = false;
+    GMlib::APoint<float,4> plane_center_pos;
 
 };
 

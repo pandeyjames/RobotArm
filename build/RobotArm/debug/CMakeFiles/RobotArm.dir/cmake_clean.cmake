@@ -28,7 +28,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RobotArm.dir/src/scenario.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/arm.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj"
-  "CMakeFiles/RobotArm.dir/src/lowerarm.cpp.obj"
+  "CMakeFiles/RobotArm.dir/src/griper.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/simulator.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/controller.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/pen.cpp.obj"
