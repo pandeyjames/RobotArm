@@ -608,35 +608,10 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj.provides: CMakeFiles/RobotArm.dir
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj.provides.build: CMakeFiles/RobotArm.dir/src/controller.cpp.obj
 
 
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj: ../../../src/pen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/RobotArm.dir/src/pen.cpp.obj"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\src\pen.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\src\pen.cpp
-
-CMakeFiles/RobotArm.dir/src/pen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RobotArm.dir/src/pen.cpp.i"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\RobotArm\src\pen.cpp > CMakeFiles\RobotArm.dir\src\pen.cpp.i
-
-CMakeFiles/RobotArm.dir/src/pen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RobotArm.dir/src/pen.cpp.s"
-	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\RobotArm\src\pen.cpp -o CMakeFiles\RobotArm.dir\src\pen.cpp.s
-
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj.requires:
-
-.PHONY : CMakeFiles/RobotArm.dir/src/pen.cpp.obj.requires
-
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj.provides: CMakeFiles/RobotArm.dir/src/pen.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/pen.cpp.obj.provides.build
-.PHONY : CMakeFiles/RobotArm.dir/src/pen.cpp.obj.provides
-
-CMakeFiles/RobotArm.dir/src/pen.cpp.obj.provides.build: CMakeFiles/RobotArm.dir/src/pen.cpp.obj
-
-
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj: hidmanager/moc_hidaction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\hidmanager\moc_hidaction.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\hidmanager\moc_hidaction.cpp
 
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.i: cmake_force
@@ -661,7 +636,7 @@ CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj.provides.build: CMakeFi
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj: hidmanager/moc_hidmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\hidmanager\moc_hidmanager.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\hidmanager\moc_hidmanager.cpp
 
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.i: cmake_force
@@ -686,7 +661,7 @@ CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj.provides.build: CMakeF
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj: hidmanager/moc_hidmanagertreemodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\hidmanager\moc_hidmanagertreemodel.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\hidmanager\moc_hidmanagertreemodel.cpp
 
 CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.i: cmake_force
@@ -711,7 +686,7 @@ CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj.provides.buil
 CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj: hidmanager/moc_standardhidmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\hidmanager\moc_standardhidmanager.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\hidmanager\moc_standardhidmanager.cpp
 
 CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.i: cmake_force
@@ -736,7 +711,7 @@ CMakeFiles/RobotArm.dir/hidmanager/moc_standardhidmanager.cpp.obj.provides.build
 CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj: hidmanager/moc_defaulthidmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\hidmanager\moc_defaulthidmanager.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\hidmanager\moc_defaulthidmanager.cpp
 
 CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.i: cmake_force
@@ -761,7 +736,7 @@ CMakeFiles/RobotArm.dir/hidmanager/moc_defaulthidmanager.cpp.obj.provides.build:
 CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj: application/moc_fboinsgrenderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\application\moc_fboinsgrenderer.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\application\moc_fboinsgrenderer.cpp
 
 CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.i: cmake_force
@@ -786,7 +761,7 @@ CMakeFiles/RobotArm.dir/application/moc_fboinsgrenderer.cpp.obj.provides.build: 
 CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj: application/moc_gmlibwrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\application\moc_gmlibwrapper.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\application\moc_gmlibwrapper.cpp
 
 CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.i: cmake_force
@@ -811,7 +786,7 @@ CMakeFiles/RobotArm.dir/application/moc_gmlibwrapper.cpp.obj.provides.build: CMa
 CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj: application/moc_guiapplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\application\moc_guiapplication.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\application\moc_guiapplication.cpp
 
 CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.i: cmake_force
@@ -836,7 +811,7 @@ CMakeFiles/RobotArm.dir/application/moc_guiapplication.cpp.obj.provides.build: C
 CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj: application/moc_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\application\moc_window.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\application\moc_window.cpp
 
 CMakeFiles/RobotArm.dir/application/moc_window.cpp.i: cmake_force
@@ -861,7 +836,7 @@ CMakeFiles/RobotArm.dir/application/moc_window.cpp.obj.provides.build: CMakeFile
 CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj: application/textures/moc_texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\application\textures\moc_texture.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\application\textures\moc_texture.cpp
 
 CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.i: cmake_force
@@ -886,7 +861,7 @@ CMakeFiles/RobotArm.dir/application/textures/moc_texture.cpp.obj.provides.build:
 CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj: include/moc_scenario.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\include\moc_scenario.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\include\moc_scenario.cpp
 
 CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.i: cmake_force
@@ -911,7 +886,7 @@ CMakeFiles/RobotArm.dir/include/moc_scenario.cpp.obj.provides.build: CMakeFiles/
 CMakeFiles/RobotArm.dir/qrc_application.cpp.obj: CMakeFiles/RobotArm.dir/flags.make
 CMakeFiles/RobotArm.dir/qrc_application.cpp.obj: CMakeFiles/RobotArm.dir/includes_CXX.rsp
 CMakeFiles/RobotArm.dir/qrc_application.cpp.obj: qrc_application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/RobotArm.dir/qrc_application.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/RobotArm.dir/qrc_application.cpp.obj"
 	C:\Qt\Qt5.7.0\Tools\mingw530_32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RobotArm.dir\qrc_application.cpp.obj -c C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\qrc_application.cpp
 
 CMakeFiles/RobotArm.dir/qrc_application.cpp.i: cmake_force
@@ -955,7 +930,6 @@ RobotArm_OBJECTS = \
 "CMakeFiles/RobotArm.dir/src/griper.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/simulator.cpp.obj" \
 "CMakeFiles/RobotArm.dir/src/controller.cpp.obj" \
-"CMakeFiles/RobotArm.dir/src/pen.cpp.obj" \
 "CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj" \
 "CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj" \
 "CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj" \
@@ -992,7 +966,6 @@ bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/griper.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/controller.cpp.obj
-bin/RobotArm.exe: CMakeFiles/RobotArm.dir/src/pen.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj
@@ -1015,7 +988,7 @@ bin/RobotArm.exe: C:/Qt/Qt5.7.0/5.7/mingw53_32/lib/libQt5Cored.a
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/linklibs.rsp
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/objects1.rsp
 bin/RobotArm.exe: CMakeFiles/RobotArm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX executable bin\RobotArm.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\RobotArm\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking CXX executable bin\RobotArm.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RobotArm.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1043,7 +1016,6 @@ CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj.r
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/griper.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/simulator.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/controller.cpp.obj.requires
-CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/src/pen.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj.requires
 CMakeFiles/RobotArm.dir/requires: CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj.requires

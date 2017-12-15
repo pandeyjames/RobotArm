@@ -1,0 +1,91 @@
+#ifndef CONTROLLER_H
+#define CONTROLLER_H
+
+#include<gmParametricsModule>
+#include "robotarm.h"
+#include <ctime>
+#include <vector>
+#include<memory>
+#include "parametrics/curves/gmpline.h"
+
+
+class Controller: public GMlib::SceneObject {
+    GM_SCENEOBJECT (Controller)
+
+public:
+    Controller();
+    void motionrotate();
+    void turn_right();
+    void turn_left();
+    void addRobotArm(std::shared_ptr<RobotArm> robotarm);
+    void move_from_A_to_B(GMlib::Point<float, 3> A,GMlib::Point<float, 3> B);
+    void change_simulation(int i);
+    void createSquare(GMlib::Point<float, 3> p, float len);
+    void createCircle(GMlib::Point<float, 3> c,float r);
+
+    void restart();
+
+    bool turning_left = false;
+    bool turning_right = false;
+    bool turning_down = false;
+    bool turning_up = false;
+    bool reset = false;
+    bool IK = true;
+
+    void updateAngles(std::vector<GMlib::Angle> &angles, GMlib::Point<float, 3> &target_position);
+protected:
+    void turn_right(double dt);
+    void turn_left(double dt);
+    void turn_up(double dt);
+    void move(double dt);
+    void manual_control(int op);
+
+private:
+
+    void localSimulate(double dt) override;
+    void run_inverse_kinematicts(double dt);
+    void getDrawPosition();
+    void update_target_positions(GMlib::APoint<float,3> &tip_position, GMlib::Point<float,3> &target_positions);
+    std::shared_ptr<RobotArm> robotarm;
+    std::shared_ptr<GMlib::PCylinder<float>> body;
+    std::vector<std::shared_ptr<Arm>> arm;
+    std::shared_ptr<GMlib::PCylinder<float>> penbody;
+    std::shared_ptr<GMlib::PCone<float>> pentip;
+    std::shared_ptr<GMlib::PSphere<float>> sph;
+    std::shared_ptr<GMlib::PCircle<float>> circle;
+    std::vector<GMlib::Point<float,3>> turn_left_target_positions;
+    std::vector<GMlib::Point<float,3>> move_target_positions;
+    std::vector<GMlib::Point<float,3>> sq_points;
+    GMlib::Point<float,3> move_tip_position;
+    GMlib::APoint<float,3> tip_position;
+    GMlib::APoint<float,3> previous_tip_position;
+    std::vector<GMlib::Angle> Angle;
+    GMlib::Angle min_angle =-90.0f;
+    GMlib::Angle max_angle =90.0f;
+    void pause(int dur)
+    {
+    int temp = time(NULL) + dur;
+
+    while(temp > time(NULL));
+    }
+
+
+    int active_arm = 0;
+    bool rotate_body = false;
+    bool sq_created = false;
+    bool body_rotated = false;
+    bool rotate_body_left = false;
+    bool body_rotated_left = false;
+    bool target_pos = false;
+
+    double timespan = 0.16; //dt*10
+    double tick =0.0;
+    double rotation_speed= 2.0;
+    double translation_speed=1.0;
+    bool moving = false;
+    GMlib::APoint<float,4> plane_center_pos;
+    bool checkTargetPositionRange();
+
+};
+
+#endif //CONTROLLER_H

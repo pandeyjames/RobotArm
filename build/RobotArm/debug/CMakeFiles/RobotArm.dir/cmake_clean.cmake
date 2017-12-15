@@ -31,7 +31,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/RobotArm.dir/src/griper.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/simulator.cpp.obj"
   "CMakeFiles/RobotArm.dir/src/controller.cpp.obj"
-  "CMakeFiles/RobotArm.dir/src/pen.cpp.obj"
   "CMakeFiles/RobotArm.dir/hidmanager/moc_hidaction.cpp.obj"
   "CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanager.cpp.obj"
   "CMakeFiles/RobotArm.dir/hidmanager/moc_hidmanagertreemodel.cpp.obj"

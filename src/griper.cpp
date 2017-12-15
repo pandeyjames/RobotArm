@@ -4,7 +4,7 @@ Griper::Griper(GMlib::Vector<float,3> pos){
     // Start values
     _rx = 0.2f;
     _ry = 0.2f;
-    _h = 1.5f;
+    _h = 4.5f;
     translateGlobal(pos);
 }
 

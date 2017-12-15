@@ -19,18 +19,16 @@ gmParametricsModule
 -
 robotarm.h
 ../../../include/robotarm.h
+ctime
+-
 vector
 -
 memory
 -
+parametrics/curves/gmpline.h
+../../../include/parametrics/curves/gmpline.h
 
 ../../../include/griper.h
-gmParametricsModule
--
-memory
--
-
-../../../include/pen.h
 gmParametricsModule
 -
 memory
@@ -45,8 +43,6 @@ arm.h
 ../../../include/arm.h
 griper.h
 ../../../include/griper.h
-pen.h
-../../../include/pen.h
 
 ../../gmlib/include/core/containers/gmarray.h
 C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarray.h
@@ -6121,18 +6117,16 @@ gmParametricsModule
 -
 robotarm.h
 C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
+ctime
+-
 vector
 -
 memory
 -
+parametrics/curves/gmpline.h
+C:/Users/Admin/Desktop/RobotArm/include/parametrics/curves/gmpline.h
 
 C:/Users/Admin/Desktop/RobotArm/include/griper.h
-gmParametricsModule
--
-memory
--
-
-C:/Users/Admin/Desktop/RobotArm/include/pen.h
 gmParametricsModule
 -
 memory
@@ -6147,8 +6141,6 @@ arm.h
 C:/Users/Admin/Desktop/RobotArm/include/arm.h
 griper.h
 C:/Users/Admin/Desktop/RobotArm/include/griper.h
-pen.h
-C:/Users/Admin/Desktop/RobotArm/include/pen.h
 
 C:/Users/Admin/Desktop/RobotArm/include/scenario.h
 ../application/gmlibwrapper.h
@@ -6177,16 +6169,12 @@ C:/Users/Admin/Desktop/RobotArm/include/arm.h
 C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
 controller.h
 C:/Users/Admin/Desktop/RobotArm/src/controller.h
+math.h
+C:/Users/Admin/Desktop/RobotArm/src/math.h
 
 C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
 griper.h
 C:/Users/Admin/Desktop/RobotArm/src/griper.h
-
-C:/Users/Admin/Desktop/RobotArm/src/pen.cpp
-pen.h
-C:/Users/Admin/Desktop/RobotArm/src/pen.h
-gmParametricsModule
--
 
 C:/Users/Admin/Desktop/RobotArm/src/robotarm.cpp
 ../include/robotarm.h

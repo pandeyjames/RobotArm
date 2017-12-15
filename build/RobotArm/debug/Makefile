@@ -905,33 +905,6 @@ src/griper.cpp.s:
 	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/griper.cpp.s
 .PHONY : src/griper.cpp.s
 
-src/pen.obj: src/pen.cpp.obj
-
-.PHONY : src/pen.obj
-
-# target to build an object file
-src/pen.cpp.obj:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/pen.cpp.obj
-.PHONY : src/pen.cpp.obj
-
-src/pen.i: src/pen.cpp.i
-
-.PHONY : src/pen.i
-
-# target to preprocess a source file
-src/pen.cpp.i:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/pen.cpp.i
-.PHONY : src/pen.cpp.i
-
-src/pen.s: src/pen.cpp.s
-
-.PHONY : src/pen.s
-
-# target to generate assembly for a file
-src/pen.cpp.s:
-	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/pen.cpp.s
-.PHONY : src/pen.cpp.s
-
 src/robotarm.obj: src/robotarm.cpp.obj
 
 .PHONY : src/robotarm.obj
@@ -1109,9 +1082,6 @@ help:
 	@echo ... src/griper.obj
 	@echo ... src/griper.i
 	@echo ... src/griper.s
-	@echo ... src/pen.obj
-	@echo ... src/pen.i
-	@echo ... src/pen.s
 	@echo ... src/robotarm.obj
 	@echo ... src/robotarm.i
 	@echo ... src/robotarm.s

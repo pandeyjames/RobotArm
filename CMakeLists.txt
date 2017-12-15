@@ -114,7 +114,6 @@ set( HDRS
   include/griper.h
   include/simulator.h
   include/controller.h
-  include/pen.h
   )
 
 set( SRCS
@@ -141,7 +140,6 @@ set( SRCS
   src/griper.cpp
   src/simulator.cpp
   src/controller.cpp
-  src/pen.cpp
   )
 
 #########

@@ -80,8 +80,8 @@ private:
   GMlibWrapper*                     _gmlib;
 
   std::queue<std::pair<const HidAction*,HidInputEvent::HidInputParams>>   _ogl_actions;
-  Controller*                       _robotarm;
-  bool                              _robotarm_selected = false;
+  Controller*                       _controller;
+  bool                              _controller_selected = false;
   Scenario*                         _scenario;
 
 };

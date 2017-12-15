@@ -6,7 +6,6 @@
 
 #include "arm.h"
 #include "griper.h"
-#include "pen.h"
 
 class RobotArm: public GMlib::SceneObject {
     GM_SCENEOBJECT(RobotArm)
@@ -20,16 +19,12 @@ public:
     void toggleDefaultVisualizer();
     void insert(GMlib::Scene &scene);
     void setMaterial(const GMlib::Material &m1, const GMlib::Material &m2);
-    //predef
-    void movePreDef(double dt);
+    void getSphPosition();
     std::shared_ptr<GMlib::PCylinder<float>> getBody(){
         return body;
     }
     std::vector<std::shared_ptr<Arm>> getArm(){
         return arm;
-    }
-    std::vector<std::shared_ptr<Pen>> getPen(){
-        return pen;
     }
     std::shared_ptr<GMlib::PPlane<float>> getBoard(){
         return board;
@@ -37,25 +32,33 @@ public:
     std::shared_ptr<GMlib::PSphere<float>> getSph(){
         return sph;
     }
-    GMlib::APoint<float,4> get_base_pos(){ getBoardPosition(); return board_base_pos;}
+    std::shared_ptr<GMlib::PCircle<float>> getCircle(){
+        return circle;
+    }
+    std::shared_ptr<GMlib::PLine<float>> getLine(){
+        return _ln;
+    }
+
+    GMlib::APoint<float,4> get_sph_pos(){ getSphPosition(); return sph_pos;}
+    void makeLine(GMlib::Point<float,3> A,GMlib::Point<float,3>B);
+
 
 protected:
     std::shared_ptr<GMlib::PCylinder<float>> body;
     std::vector<std::shared_ptr<Arm>> arm;
-    std::vector<std::shared_ptr<Pen>> pen;
     std::shared_ptr<GMlib::PSphere<float>> sph;
     std::shared_ptr<GMlib::PPlane<float>> board;
+    std::shared_ptr<GMlib::PCircle<float>> circle;
+    std::shared_ptr<GMlib::PLine<float>> _ln;
 
 private:
-    void localSimulate (double dt) override;
     void makeBody(GMlib::Point<float, 3> pos);
     void makeSph(GMlib::Point<float, 3> pos);
     void makeArm(GMlib::Point<float, 3> pos);
     void makeBoard();
     void reArrange();
-    void getBoardPosition();
     void armLinks();
-    GMlib::APoint<float,4> board_base_pos;
+    GMlib::APoint<float,4> sph_pos;
 
 };
 #endif // ROBOTARM_H
