@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../../../application/gmlibwrapper.h
+core/gmpoint
+-
+QObject
+-
+QSize
+-
+QRectF
+-
+QStringListModel
+-
+memory
+-
+unordered_map
+-
+
 ../../../include/arm.h
 gmParametricsModule
 -
@@ -43,6 +59,14 @@ arm.h
 ../../../include/arm.h
 griper.h
 ../../../include/griper.h
+
+../../../include/scenario.h
+../application/gmlibwrapper.h
+../../../application/gmlibwrapper.h
+QObject
+-
+QImage
+-
 
 ../../gmlib/include/core/containers/gmarray.h
 C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarray.h
@@ -6171,6 +6195,8 @@ controller.h
 C:/Users/Admin/Desktop/RobotArm/src/controller.h
 math.h
 C:/Users/Admin/Desktop/RobotArm/src/math.h
+scenario.h
+C:/Users/Admin/Desktop/RobotArm/src/scenario.h
 
 C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
 griper.h

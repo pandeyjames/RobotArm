@@ -80,3 +80,15 @@ void Scenario::deleteRobotArm() {
 
     _simulator->deleteRobotArm();
 }
+
+void Scenario::Replot(){
+if(ln)
+    ln->replot(10,1);
+}
+
+void Scenario::createLine(GMlib::Point<float, 3> A, GMlib::Point<float, 3> B)
+{
+    ln = new GMlib::PLine<float>(A,B);
+    //ln->replot(10,1);
+    scene()->insert(ln);
+}

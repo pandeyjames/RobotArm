@@ -391,7 +391,20 @@ void DefaultHidManager::heSelectRobotArm() {
 
 void DefaultHidManager::heReturnToStart() {
 
-    std::cout<<"Return to start";
+    std::cout<<"Return to start/reset";
+    if(_controller_selected) {
+
+        auto test = true;
+
+        if(!_controller->reset)
+            _controller->reset =true;
+        else
+            _controller->reset=false;
+    }
+}
+void DefaultHidManager::hePlayPause() {
+
+    std::cout<<"Play Pause";
     if(_controller_selected) {
 
         auto test = true;
@@ -416,9 +429,7 @@ void DefaultHidManager::heTurnRight(){
     //_controller->turning_left = false;
     //_controller->turning_right = true;
     std::cout<<"Turning right";
-    _controller->turn_right(0.016);
 
-    //}
 }
 
 void DefaultHidManager::heTurnUp() {
@@ -770,6 +781,12 @@ void DefaultHidManager::setupDefaultHidBindings() {
                                "",
                                this, SLOT(heTurnRight()),
                                OGL_TRIGGER);
+    QString ha_id_p_p =
+            registerHidAction( "Object interaction",
+                               "Play/Pause",
+                               "",
+                               this, SLOT(hePlayPause()),
+                               OGL_TRIGGER);
 
 
 
@@ -777,7 +794,7 @@ void DefaultHidManager::setupDefaultHidBindings() {
     //// Set up initial mapping
     registerHidMapping( ha_id_objint_toggle_edit,           new KeyPressInput( Qt::Key_E ) );
     registerHidMapping( ha_id_objint_replot_high,           new KeyPressInput( Qt::Key_P, Qt::ShiftModifier ) );
-    registerHidMapping( ha_id_objint_replot_med,            new KeyPressInput( Qt::Key_P ) );
+    //registerHidMapping( ha_id_objint_replot_med,            new KeyPressInput( Qt::Key_P ) );
     registerHidMapping( ha_id_objint_replot_low,            new KeyPressInput( Qt::Key_P, Qt::ControlModifier) );
     registerHidMapping( ha_id_sim_toggle,                   new KeyPressInput( Qt::Key_R ) );
     registerHidMapping( ha_id_render_toggle_shademode,      new KeyPressInput( Qt::Key_Z ) );
@@ -807,6 +824,7 @@ void DefaultHidManager::setupDefaultHidBindings() {
     registerHidMapping( ha_id_down,                         new KeyPressInput( Qt::Key_S ) );
     registerHidMapping( ha_id_left,                         new KeyPressInput( Qt::Key_A ) );
     registerHidMapping( ha_id_right,                        new KeyPressInput( Qt::Key_D ) );
+    registerHidMapping( ha_id_p_p,                          new KeyPressInput( Qt::Key_P ) );
 }
 
 void DefaultHidManager::init(GMlibWrapper& gmlib) {

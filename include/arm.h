@@ -65,7 +65,7 @@ class Arm: public  GMlib::SceneObject {
         void link();
 
         bool right;
-        bool range;
+        bool range=false;
 //        std::make_shared<GMlib::PLine> x;
 //        auto y = new GMlib::PLine<float>(joints[i]->getPos(), joints[i]->getSide());
 //        auto z = new GMlib::PLine<float>(joints[i]->getPos(), joints[i]->getUp());

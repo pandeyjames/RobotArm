@@ -8,6 +8,8 @@
 #include<memory>
 #include "parametrics/curves/gmpline.h"
 
+class Scenario;
+
 
 class Controller: public GMlib::SceneObject {
     GM_SCENEOBJECT (Controller)
@@ -15,8 +17,7 @@ class Controller: public GMlib::SceneObject {
 public:
     Controller();
     void motionrotate();
-    void turn_right();
-    void turn_left();
+    void turn(double dt);
     void addRobotArm(std::shared_ptr<RobotArm> robotarm);
     void move_from_A_to_B(GMlib::Point<float, 3> A,GMlib::Point<float, 3> B);
     void change_simulation(int i);
@@ -38,6 +39,12 @@ public:
     void turn_up(double dt);
     void move(double dt);
     void manual_control(int op);
+    GMlib::APoint<float,3> getP1(){
+        return previous_tip_position;
+    }
+    GMlib::APoint<float,3> getP2(){
+        return tip_position;
+    }
 
 private:
 
@@ -51,7 +58,12 @@ private:
     std::shared_ptr<GMlib::PCylinder<float>> penbody;
     std::shared_ptr<GMlib::PCone<float>> pentip;
     std::shared_ptr<GMlib::PSphere<float>> sph;
-    std::shared_ptr<GMlib::PCircle<float>> circle;
+    std::shared_ptr<GMlib::PCircle<float>> plate;
+
+
+    std::vector<std::shared_ptr<Arm>> getArm(){
+        return arm;
+    }
     std::vector<GMlib::Point<float,3>> turn_left_target_positions;
     std::vector<GMlib::Point<float,3>> move_target_positions;
     std::vector<GMlib::Point<float,3>> sq_points;
@@ -75,7 +87,6 @@ private:
     bool body_rotated = false;
     bool rotate_body_left = false;
     bool body_rotated_left = false;
-    bool target_pos = false;
 
     double timespan = 0.16; //dt*10
     double tick =0.0;
@@ -84,6 +95,8 @@ private:
     bool moving = false;
     GMlib::APoint<float,4> plane_center_pos;
     void checkTargetPositionRange();
+    bool targetrange =false;
+    Scenario* _scenario;
 
 };
 

@@ -20,6 +20,7 @@ public:
     void insert(GMlib::Scene &scene);
     void setMaterial(const GMlib::Material &m1, const GMlib::Material &m2);
     void getSphPosition();
+    std::shared_ptr<GMlib::Visualizer> vis;
     std::shared_ptr<GMlib::PCylinder<float>> getBody(){
         return body;
     }
@@ -32,8 +33,8 @@ public:
     std::shared_ptr<GMlib::PSphere<float>> getSph(){
         return sph;
     }
-    std::shared_ptr<GMlib::PCircle<float>> getCircle(){
-        return circle;
+    std::shared_ptr<GMlib::PCircle<float>> getPlate(){
+        return plate;
     }
     std::shared_ptr<GMlib::PLine<float>> getLine(){
         return _ln;
@@ -48,7 +49,7 @@ protected:
     std::vector<std::shared_ptr<Arm>> arm;
     std::shared_ptr<GMlib::PSphere<float>> sph;
     std::shared_ptr<GMlib::PPlane<float>> board;
-    std::shared_ptr<GMlib::PCircle<float>> circle;
+    std::shared_ptr<GMlib::PCircle<float>> plate;
     std::shared_ptr<GMlib::PLine<float>> _ln;
 
 private:

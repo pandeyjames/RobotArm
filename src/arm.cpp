@@ -16,9 +16,9 @@ Arm::Arm(GMlib::Point<float, 3> pos, bool orientation){
 
 void Arm::setMaterial(const GMlib::Material &m1, const GMlib::Material &m2, const GMlib::Material &m3, const GMlib::Material &m4)
 {
-    for(unsigned int i= 0;i<joints.size();i++){
-        joints[i]->setMaterial(m4);
-    }
+    //for(unsigned int i= 0;i<joints.size();i++){
+    //   joints[i]->setMaterial(m4);
+    //}
     upperarm->setMaterial(m1);
     lowerarm->setMaterial(m2);
     griper->setMaterial(m3);
@@ -44,7 +44,7 @@ void Arm::replot(int m1, int m2, int d1, int d2)
 
 void Arm::toggleDefaultVisualizer()
 {
-    for(unsigned int i= 0; i < joints.size(); i++) {
+    for(unsigned int i= 0; i < 3; i++) {
         joints[i]->toggleDefaultVisualizer();
 
 
@@ -52,7 +52,7 @@ void Arm::toggleDefaultVisualizer()
     upperarm->toggleDefaultVisualizer();
     lowerarm->toggleDefaultVisualizer();
     griper->toggleDefaultVisualizer();
-    penbody->toggleDefaultVisualizer();
+    //penbody->toggleDefaultVisualizer();
     pentip->toggleDefaultVisualizer();
     arm_base->toggleDefaultVisualizer();
     tip->toggleDefaultVisualizer();
@@ -77,7 +77,7 @@ void Arm::makeGriper()
 void Arm::makeJoints()
 {
     for(unsigned int i =0;i<3;i++){
-        joints.push_back( std::make_shared<GMlib::PSphere<float>>(0.1));
+        joints.push_back( std::make_shared<GMlib::PSphere<float>>(0.5));
     }
     for(unsigned int i =0;i<3;i++){
         auto x = new GMlib::PLine<float>(joints[i]->getPos(), joints[i]->getDir());
@@ -95,6 +95,9 @@ void Arm::makeJoints()
         joints[i]->insert(x);
         joints[i]->insert(y);
         joints[i]->insert(z);
+        joints[0]->setMaterial(GMlib::GMmaterial::blackRubber());
+        joints[1]->setMaterial(GMlib::GMmaterial::gold());
+        joints[2]->setMaterial(GMlib::GMmaterial::jade());
 
     }
 
@@ -122,9 +125,7 @@ void Arm::checkPosition(GMlib::Point<float, 3> pos)
         {
             std::cout<<"Inside Range"<<std::endl;
             range=true;
-
         }
-
     }
     else
         range=false;
@@ -139,42 +140,34 @@ void Arm::reArrangePosition(){
     joints[0]->translate( GMlib::Vector<float,3>( 0.0f, 0.0f, 4.0f ) );
     joints[0]->rotate(GMlib::Angle(30), GMlib::Vector<float,3>(0.0f, 30.0f, 0.0f ) ); //base joint exact rot v0=30
 
-    //joints[0]->rotate(GMlib::Angle(90-30), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) ); //v1
+    joints[0]->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) ); //v1
+    joints[0]->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f ) );
+    joints[0]->rotate(GMlib::Angle(-90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) );
+
+    //    joints[0]->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
+    //    joints[0]->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) );
 
 
-    //upperarm->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ));
-    upperarm->translate( GMlib::Vector<float,3>( 0.0f, 0.0f, 10.0f ) );
+    upperarm->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ));
+    upperarm->translate( GMlib::Vector<float,3>( 0.0f, 0.0f, -10.0f ) );
 
 
     // Joint between lowerarm and upperarm
-    joints[1]->translate( GMlib::Vector<float,3>(0.0f, 0.0f, 10.0f ) );
-    joints[1]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 1.0f, 0.0f, 0.0f ) );
-    //joints[1]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 1.0f, 0.0f,0.0f ) );
-    //joints[1]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );//V2
+    joints[1]->translate( GMlib::Vector<float,3>(0.0f, 0.0f, -10.0f ) );
+    joints[1]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 0.0f, 1.0f, 0.0f ) );
+    joints[1]->rotate(GMlib::Angle(-90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) );
+    joints[1]->rotate(GMlib::Angle(-90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );;//V2
     lowerarm->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 0.0f, 1.0f,0.0f ) );
     lowerarm->translate( GMlib::Vector<float,3>( 0.0f, 0.0f,6.0f ) );
 
 
     // Joint 2
 
-      joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( .0f, 0.0f, 1.0f ) );
-      joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
-      joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 0.0f, 0.0f, 1.0f ) );
-      joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 0.0f, 1.0f, 0.0f ) );
-      joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 0.0f, 1.0f, 0.0f ) );
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
-    //joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
-    //joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) ); //V3
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f ) );
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) );
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ) );
-//    joints[2]->rotate( GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 1.0f, 0.0f ) );
-    //lowerarm->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f ));
-      joints[2]->translate( GMlib::Vector<float,3>(-6.0f, 0.0f, 0.0f ) );
+    joints[2]->rotate( GMlib::Angle(-90), GMlib::Vector<float,3>( 0.0f, 1.0f, 0.0f ) );
+    joints[2]->translate( GMlib::Vector<float,3>(6.0f, 0.0f, 0.0f ) );
     //griper->translate( GMlib::Vector<float,3>( -2.0f, 0.0f, 0.0f ));
     griper->rotate( GMlib::Angle(90), GMlib::Vector<float,3>( 1.0f, 0.0f,0.0f ) );
-    griper->rotate( GMlib::Angle(180), GMlib::Vector<float,3>( 0.0f, 1.0f,0.0f ) );
+    //griper->rotate( GMlib::Angle(180), GMlib::Vector<float,3>( 0.0f, 1.0f,0.0f ) );
     pentip->translate(GMlib::Vector<float,3>(0.0f, 0.0f, 2.7f ));
     tip->translate(GMlib::Vector<float, 3>(0.0f, 0.0f, 0.4f ));
 }
@@ -223,34 +216,59 @@ std::vector<GMlib::Angle> Arm::inverseKinematics(GMlib::Point<float, 3> targetPo
 
     //    auto A3 = (std::acos(uHeight*uHeight+l2-lHeight*lHeight)/2*uHeight*l1)+(std::acos(targetPosition(1))/l1);
     checkPosition(targetPosition);
-    if(range){
-        auto uHeight = upperarm->getHeight();
-        auto lHeight = lowerarm->getHeight();
-        auto gHeight = griper->getHeight()*2;
-        auto z0 =  targetPosition(2) ;
-        auto l1= std::sqrt((targetPosition(0)) * (targetPosition(0)) + (targetPosition(1)) * (targetPosition(1)) );
-        auto r= l1-uHeight;
-        auto l = z0 *z0  +  r*r;
-        auto u0 =std::atan2(targetPosition(1),targetPosition(0));
-        auto uAngle = std::atan2(targetPosition(1),targetPosition(0));
-        auto gAngle =  6.28319 - std::acos((l-lHeight*lHeight-gHeight*gHeight)/(2*lHeight*gHeight));
-        auto lAngle =  std::atan2(r,z0)-std::atan2(lHeight+gHeight*std::cos(gAngle), gHeight* std::sin(gAngle) );
-        std::cout<<"uHeight = "<<uHeight<<" lHeight"<<lHeight<<" gHeight="<<gHeight<<std::endl;
-        Angle[0]=uAngle;
-        Angle[1]=lAngle;
-        Angle[2]=gAngle;
-        Angle[3]=u0;
-        //Angle.push_back(A3);
-        //std::cout<<"Angle= "<<Angle[0]<<"    "<<Angle[1]<<"    "<<Angle[2]<<std::endl;
-        return Angle;
-    }
-    else {
-        Angle.push_back(0);
-        Angle.push_back(0);
-        Angle.push_back(0);
-        Angle.push_back(0);
-        return Angle;
-    }
+
+    //Help from Ghada
+    if(!range){
+    auto uHeight = upperarm->getHeight();
+    auto lHeight = lowerarm->getHeight();
+    auto gHeight = griper->getHeight()*2;
+    auto z0 =  targetPosition(2) ;
+    auto l1= std::sqrt((targetPosition(0)) * (targetPosition(0)) + (targetPosition(1)) * (targetPosition(1)) );
+    auto r= l1-uHeight;
+    auto l = z0 *z0  +  r*r;
+    auto u0 =std::atan2(targetPosition(2),targetPosition(0));
+    auto uAngle = std::atan2(targetPosition(1),targetPosition(0));
+    auto gAngle =  6.28319 - std::acos((l-lHeight*lHeight-gHeight*gHeight)/(2*lHeight*gHeight));
+    auto lAngle =  std::atan2(r,z0)-std::atan2(lHeight+gHeight*std::cos(gAngle), gHeight* std::sin(gAngle) );
+    std::cout<<"uHeight = "<<uHeight<<" lHeight"<<lHeight<<" gHeight="<<gHeight<<std::endl;
+    //Angle.clear();
+    Angle.push_back(uAngle);
+    Angle.push_back(lAngle);
+    Angle.push_back(lAngle);
+    Angle.push_back((u0));
+}
+
+//    auto l1 = upperarm->getHeight();
+//    auto l2 = lowerarm->getHeight();
+//    auto l3 = griper->getHeight()*2;
+//    auto z =  targetPosition(2) ;
+//    auto x = targetPosition(0);
+//    auto y = targetPosition(1);
+//    auto v0=std::atan2(y,x);
+//    auto h=sqrt(x*x+z*z);
+//    auto v11=std::atan2(z,x);
+//    auto v2=acos((-(h*h)+(l2+l3)*(l2+l3)+l1*l1)/2*l1*(l2+l3));
+//    auto v12=v11+std::acos((h*h)-(l2+l3)*(l2+l3)+(l1*l1)/2*l1*h);
+//    auto v1=v11+v12;
+//    auto v3=std::atan2()
+//    auto l1= std::sqrt((targetPosition(0)) * (targetPosition(0)) + (targetPosition(1)) * (targetPosition(1)) );
+//    auto r= l1-uHeight;
+//    auto l = z0 *z0  +  r*r;
+//    auto u0 =std::atan2(targetPosition(2),targetPosition(0));
+//    auto uAngle = std::atan2(targetPosition(1),targetPosition(0));
+//    auto gAngle =  6.28319 - std::acos((l-lHeight*lHeight-gHeight*gHeight)/(2*lHeight*gHeight));
+//    auto lAngle =  std::atan2(r,z0)-std::atan2(lHeight+gHeight*std::cos(gAngle), gHeight* std::sin(gAngle) );
+    //Angle.push_back(A3);
+    //std::cout<<"Angle= "<<Angle[0]<<"    "<<Angle[1]<<"    "<<Angle[2]<<std::endl;
+    return Angle;
+    // }
+    //    else {
+    //        Angle[0]=GMlib::Angle(0);
+    //        Angle[1]=GMlib::Angle(0);
+    //        Angle[2]=GMlib::Angle(0);
+    //        Angle[3]=GMlib::Angle(0);
+    //        return Angle;
+    //}
 }
 
 std::vector<std::shared_ptr<GMlib::PSphere<float> > > Arm::getJoints()

@@ -68,6 +68,7 @@ private slots:
   virtual void                      heTurnDown();
   virtual void                      heTurnLeft();
   virtual void                      heTurnRight();
+  virtual void                      hePlayPause();
 
 private:
   GMlib::Camera*                    findCamera( const QString& view_name ) const;
