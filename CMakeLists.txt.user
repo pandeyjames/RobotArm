@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.0.2, 2017-12-15T21:49:13. -->
+<!-- Written by QtCreator 4.0.2, 2017-12-19T07:00:41. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -72,6 +72,10 @@
      <value type="QString">GMLIB_DIR:PATH=/build/gmlib</value>
      <value type="QString">GMlib_DIR:PATH=C:/Users/Admin/Desktop/RobotArm/build/gmlib/lib/cmake/GMlib-0.6.9</value>
      <value type="QString">INCLUDE_DIR:PATH=include</value>
+     <value type="QString">LIB_DIR:PATH=</value>
+     <value type="QString">LINK_DIR:PATH=</value>
+     <value type="QString">QEXTSERIALPORT_INCDIR:PATH=C:/Users/Admin/Desktop/RobotArm/qextserialport</value>
+     <value type="QString">QEXTSERIALPORT_LIBDIR:PATH=C:/Users/Admin/Desktop/RobotArm/qextserialport/debug</value>
      <value type="QString">QT_QMAKE_EXECUTABLE:STRING=%{Qt:qmakeExecutable}</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:/Users/Admin/Desktop/RobotArm/build/RobotArm/debug</value>

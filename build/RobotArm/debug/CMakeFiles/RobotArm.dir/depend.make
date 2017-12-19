@@ -2537,6 +2537,7 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../gmlib/includ
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Program\ Files\ (x86)/glew/include/GL/glew.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QEvent
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QHash
+CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QScopedPointer
@@ -2547,6 +2548,7 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QVariant
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCore
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCoreDepends
+CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractanimation.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
@@ -3006,10 +3008,13 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../hidmanage
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../hidmanager/hidmanager.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../hidmanager/standardhidmanager.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/arm.h
+CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/control.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/controller.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/robotarm.h
 CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../include/scenario.h
+CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../qextserialport/src/qextserialport.h
+CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj: ../../../qextserialport/src/qextserialport_global.h
 
 CMakeFiles/RobotArm.dir/hidmanager/hidaction.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QEvent
 CMakeFiles/RobotArm.dir/hidmanager/hidaction.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
@@ -5917,12 +5922,6 @@ CMakeFiles/RobotArm.dir/src/arm.cpp.obj: ../../../include/arm.h
 CMakeFiles/RobotArm.dir/src/arm.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/src/arm.cpp.obj: ../../../src/arm.cpp
 
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../application/gmlibwrapper.h
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/arm.h
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/controller.h
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/griper.h
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/robotarm.h
-CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/scenario.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/core/containers/gmarray.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/core/containers/gmdmatrix.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/core/containers/gmdvector.h
@@ -6127,10 +6126,12 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/scene/select
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/scene/utils/gmmaterial.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../gmlib/include/scene/visualizers/gmselectorgridvisualizer.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Program\ Files\ (x86)/glew/include/GL/glew.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QSize
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QStringListModel
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
@@ -6213,6 +6214,7 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/inc
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtransform.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs_win.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../application/gmlibwrapper.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/core/src/containers/gmarray.c
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/core/src/containers/gmarray.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/core/src/containers/gmarrayt.c
@@ -6442,9 +6444,16 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/scene/src
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmselectorgridvisualizer.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/arm.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/control.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/controller.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/griper.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/robotarm.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../include/scenario.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../qextserialport/src/qextserialport.h
+CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../qextserialport/src/qextserialport_global.h
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj: ../../../src/controller.cpp
 
-CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../gmlib/include/core/containers/gmarray.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../gmlib/include/core/containers/gmdmatrix.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../gmlib/include/core/containers/gmdvector.h
@@ -6877,6 +6886,7 @@ CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../gmlib/modules/scene/src/vis
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmselectorgridvisualizer.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
+CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj: ../../../src/griper.cpp
 
 CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj: ../../gmlib/include/core/containers/gmarray.h
@@ -7582,11 +7592,13 @@ CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../gmlib/include/scene/visualiz
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../gmlib/include/scene/visualizers/gmstdrepvisualizer.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../gmlib/include/scene/visualizers/gmsurroundingspherevisualizer.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Program\ Files\ (x86)/glew/include/GL/glew.h
+CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QList
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QSize
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QStringListModel
+CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
@@ -7943,11 +7955,14 @@ CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../gmlib/modules/scene/src/v
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmsurroundingspherevisualizer.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/arm.h
+CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/control.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/controller.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/robotarm.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/scenario.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../include/simulator.h
+CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../qextserialport/src/qextserialport.h
+CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../qextserialport/src/qextserialport_global.h
 CMakeFiles/RobotArm.dir/src/scenario.cpp.obj: ../../../src/scenario.cpp
 
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../gmlib/include/core/containers/gmarray.h
@@ -8154,6 +8169,8 @@ CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../gmlib/include/scene/utils/g
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../gmlib/include/scene/visualizers/gmselectorgridvisualizer.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Program\ Files\ (x86)/glew/include/GL/glew.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QDir
+CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
+CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic.h
@@ -8479,9 +8496,12 @@ CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../gmlib/modules/scene/src/
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/arm.h
+CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/control.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/controller.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/griper.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/robotarm.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../include/simulator.h
+CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../qextserialport/src/qextserialport.h
+CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../qextserialport/src/qextserialport_global.h
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj: ../../../src/simulator.cpp
 

@@ -56,7 +56,7 @@ private slots:
   virtual void                      heToggleObjectDisplayMode();
   virtual void                      heToggleSimulation();
   virtual void                      heToggleSelectAllObjects();
-//  virtual void                      heUnlockCamera();
+//  virtual void                    heUnlockCamera();
   virtual void                      heZoom( const HidInputEvent::HidInputParams& params );
 
   virtual void                      heLeftMouseReleaseStuff();
@@ -69,6 +69,15 @@ private slots:
   virtual void                      heTurnLeft();
   virtual void                      heTurnRight();
   virtual void                      hePlayPause();
+  virtual void                      ctrl1();
+  virtual void                      shft1();
+  virtual void                      ctrl2();
+  virtual void                      shft2();
+  virtual void                      ctrl3();
+  virtual void                      shft3();
+  virtual void                      ctrl4();
+  virtual void                      shft4();
+  virtual void                      createSquare();
 
 private:
   GMlib::Camera*                    findCamera( const QString& view_name ) const;

@@ -174,6 +174,21 @@ GMlib_DIR:PATH=C:/Users/Admin/Desktop/RobotArm/build/gmlib/lib/cmake/GMlib-0.6.9
 INCLUDE_DIR:PATH=include
 
 //No help, variable specified on the command line.
+LIB_DIR:PATH=
+
+//No help, variable specified on the command line.
+LINK_DIR:PATH=
+
+//Path to a library.
+PATHS:FILEPATH=PATHS-NOTFOUND
+
+//No help, variable specified on the command line.
+QEXTSERIALPORT_INCDIR:PATH=C:/Users/Admin/Desktop/RobotArm/qextserialport
+
+//No help, variable specified on the command line.
+QEXTSERIALPORT_LIBDIR:PATH=C:/Users/Admin/Desktop/RobotArm/qextserialport/debug
+
+//No help, variable specified on the command line.
 QT_QMAKE_EXECUTABLE:STRING=C:/Qt/Qt5.7.0/5.7/mingw53_32/bin/qmake.exe
 
 //The directory containing a CMake configuration file for Qt5Core.

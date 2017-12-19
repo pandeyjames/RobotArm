@@ -77,15 +77,24 @@ message( "GMlib_DEFINITIONS:  ${GMlib_DEFINITIONS}" )
 message( "GMlib_LIBRARIES:    ${GMlib_LIBRARIES}" )
 include_directories( ${GMlib_INCLUDE_DIRS} )
 link_directories( ${GMlib_LINK_DIRS} )
+
 add_definitions(${GMlib_DEFINITIONS})
 
 message( "INCLUDE_DIR: ${INCLUDE_DIR}" )
 include_directories( ${INCLUDE_DIR} )
 
+
+#find_library(
+#    PATHS $(QEXTSERIALPORT_INCDIR)
+#    )
+#link_directories($(QEXTSERIALPORT_LIBDIR))
+#include_directories($(QEXTSERIALPORT_INCDIR))
+
 include_directories( ${GLEW_INCLUDE_DIRS})
 if(WIN32)
   add_definitions(-DGLEW_STATIC)
 endif(WIN32)
+
 
 #######
 # Files
@@ -114,6 +123,7 @@ set( HDRS
   include/griper.h
   include/simulator.h
   include/controller.h
+  #include/control.h
   )
 
 set( SRCS
@@ -140,6 +150,7 @@ set( SRCS
   src/griper.cpp
   src/simulator.cpp
   src/controller.cpp
+  #src/control.cpp
   )
 
 #########

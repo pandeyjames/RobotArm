@@ -96,7 +96,7 @@ void RobotArm::reArrange(){
     //body->rotateGlobal( GMlib::Angle(90), GMlib::Vector<float,3>(1.0f, 0.0f, 0.0f ));
     //body->translate(GMlib::Vector<float,3>(-1.0f, 0.0f, 0.0f ));
     //sph->translate(GMlib::Vector<float,3>(0,0,0));
-    //plate->rotate(GMlib::Angle(90), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f ));
+    plate->rotate(GMlib::Angle(-30), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f ));
 }
 
 void RobotArm::getSphPosition()

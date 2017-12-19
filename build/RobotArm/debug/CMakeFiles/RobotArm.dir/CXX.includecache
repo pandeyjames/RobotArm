@@ -6,68 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../../../application/gmlibwrapper.h
-core/gmpoint
--
-QObject
--
-QSize
--
-QRectF
--
-QStringListModel
--
-memory
--
-unordered_map
--
-
-../../../include/arm.h
-gmParametricsModule
--
-memory
--
-griper.h
-../../../include/griper.h
-
-../../../include/controller.h
-gmParametricsModule
--
-robotarm.h
-../../../include/robotarm.h
-ctime
--
-vector
--
-memory
--
-parametrics/curves/gmpline.h
-../../../include/parametrics/curves/gmpline.h
-
-../../../include/griper.h
-gmParametricsModule
--
-memory
--
-
-../../../include/robotarm.h
-gmParametricsModule
--
-memory
--
-arm.h
-../../../include/arm.h
-griper.h
-../../../include/griper.h
-
-../../../include/scenario.h
-../application/gmlibwrapper.h
-../../../application/gmlibwrapper.h
-QObject
--
-QImage
--
-
 ../../gmlib/include/core/containers/gmarray.h
 C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarray.h
 -
@@ -1726,6 +1664,10 @@ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QHash
 qhash.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhash.h
 
+C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
+qiodevice.h
+C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiodevice.h
+
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QList
 qlist.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlist.h
@@ -2109,6 +2051,10 @@ qtcoreversion.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtcoreversion.h
 
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCoreDepends
+
+C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
+qglobal.h
+C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h
 
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractanimation.h
 QtCore/qobject.h
@@ -6136,11 +6082,17 @@ memory
 griper.h
 C:/Users/Admin/Desktop/RobotArm/include/griper.h
 
+C:/Users/Admin/Desktop/RobotArm/include/control.h
+../qextserialport/src/qextserialport.h
+C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+
 C:/Users/Admin/Desktop/RobotArm/include/controller.h
 gmParametricsModule
 -
 robotarm.h
 C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
+control.h
+C:/Users/Admin/Desktop/RobotArm/include/control.h
 ctime
 -
 vector
@@ -6186,21 +6138,33 @@ vector
 memory
 -
 
+C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+QtCore/QIODevice
+-
+qextserialport_global.h
+C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
+termios.h
+-
+
+C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
+QtCore/QtGlobal
+-
+
 C:/Users/Admin/Desktop/RobotArm/src/arm.cpp
 ../include/arm.h
 C:/Users/Admin/Desktop/RobotArm/include/arm.h
 
 C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
-controller.h
-C:/Users/Admin/Desktop/RobotArm/src/controller.h
+../include/controller.h
+C:/Users/Admin/Desktop/RobotArm/include/controller.h
 math.h
 C:/Users/Admin/Desktop/RobotArm/src/math.h
-scenario.h
-C:/Users/Admin/Desktop/RobotArm/src/scenario.h
+../include/scenario.h
+C:/Users/Admin/Desktop/RobotArm/include/scenario.h
 
 C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
-griper.h
-C:/Users/Admin/Desktop/RobotArm/src/griper.h
+../include/griper.h
+C:/Users/Admin/Desktop/RobotArm/include/griper.h
 
 C:/Users/Admin/Desktop/RobotArm/src/robotarm.cpp
 ../include/robotarm.h

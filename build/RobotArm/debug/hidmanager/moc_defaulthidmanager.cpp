@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_DefaultHidManager_t {
-    QByteArrayData data[39];
-    char stringdata0[623];
+    QByteArrayData data[48];
+    char stringdata0[684];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -67,7 +67,16 @@ QT_MOC_LITERAL(34, 568, 8), // "heTurnUp"
 QT_MOC_LITERAL(35, 577, 10), // "heTurnDown"
 QT_MOC_LITERAL(36, 588, 10), // "heTurnLeft"
 QT_MOC_LITERAL(37, 599, 11), // "heTurnRight"
-QT_MOC_LITERAL(38, 611, 11) // "hePlayPause"
+QT_MOC_LITERAL(38, 611, 11), // "hePlayPause"
+QT_MOC_LITERAL(39, 623, 5), // "ctrl1"
+QT_MOC_LITERAL(40, 629, 5), // "shft1"
+QT_MOC_LITERAL(41, 635, 5), // "ctrl2"
+QT_MOC_LITERAL(42, 641, 5), // "shft2"
+QT_MOC_LITERAL(43, 647, 5), // "ctrl3"
+QT_MOC_LITERAL(44, 653, 5), // "shft3"
+QT_MOC_LITERAL(45, 659, 5), // "ctrl4"
+QT_MOC_LITERAL(46, 665, 5), // "shft4"
+QT_MOC_LITERAL(47, 671, 12) // "createSquare"
 
     },
     "DefaultHidManager\0signToggleSimulation\0"
@@ -86,7 +95,9 @@ QT_MOC_LITERAL(38, 611, 11) // "hePlayPause"
     "heZoom\0heLeftMouseReleaseStuff\0"
     "heOpenCloseHidHelp\0heSelectRobotArm\0"
     "heReturnToStart\0heTurnUp\0heTurnDown\0"
-    "heTurnLeft\0heTurnRight\0hePlayPause"
+    "heTurnLeft\0heTurnRight\0hePlayPause\0"
+    "ctrl1\0shft1\0ctrl2\0shft2\0ctrl3\0shft3\0"
+    "ctrl4\0shft4\0createSquare"
 };
 #undef QT_MOC_LITERAL
 
@@ -96,7 +107,7 @@ static const uint qt_meta_data_DefaultHidManager[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      32,   14, // methods
+      41,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -104,40 +115,49 @@ static const uint qt_meta_data_DefaultHidManager[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,  174,    2, 0x06 /* Public */,
-       3,    0,  175,    2, 0x06 /* Public */,
+       1,    0,  219,    2, 0x06 /* Public */,
+       3,    0,  220,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,  176,    2, 0x0a /* Public */,
-       5,    0,  177,    2, 0x08 /* Private */,
-       6,    0,  178,    2, 0x08 /* Private */,
-       7,    1,  179,    2, 0x08 /* Private */,
-      10,    1,  182,    2, 0x08 /* Private */,
-      11,    1,  185,    2, 0x08 /* Private */,
-      12,    1,  188,    2, 0x08 /* Private */,
-      13,    1,  191,    2, 0x08 /* Private */,
-      14,    1,  194,    2, 0x08 /* Private */,
-      16,    0,  197,    2, 0x08 /* Private */,
-      17,    0,  198,    2, 0x08 /* Private */,
-      18,    0,  199,    2, 0x08 /* Private */,
-      19,    1,  200,    2, 0x08 /* Private */,
-      20,    1,  203,    2, 0x08 /* Private */,
-      21,    1,  206,    2, 0x08 /* Private */,
-      22,    1,  209,    2, 0x08 /* Private */,
-      23,    1,  212,    2, 0x08 /* Private */,
-      26,    0,  215,    2, 0x08 /* Private */,
-      27,    0,  216,    2, 0x08 /* Private */,
-      28,    0,  217,    2, 0x08 /* Private */,
-      29,    1,  218,    2, 0x08 /* Private */,
-      30,    0,  221,    2, 0x08 /* Private */,
-      31,    0,  222,    2, 0x08 /* Private */,
-      32,    0,  223,    2, 0x08 /* Private */,
-      33,    0,  224,    2, 0x08 /* Private */,
-      34,    0,  225,    2, 0x08 /* Private */,
-      35,    0,  226,    2, 0x08 /* Private */,
-      36,    0,  227,    2, 0x08 /* Private */,
-      37,    0,  228,    2, 0x08 /* Private */,
-      38,    0,  229,    2, 0x08 /* Private */,
+       4,    0,  221,    2, 0x0a /* Public */,
+       5,    0,  222,    2, 0x08 /* Private */,
+       6,    0,  223,    2, 0x08 /* Private */,
+       7,    1,  224,    2, 0x08 /* Private */,
+      10,    1,  227,    2, 0x08 /* Private */,
+      11,    1,  230,    2, 0x08 /* Private */,
+      12,    1,  233,    2, 0x08 /* Private */,
+      13,    1,  236,    2, 0x08 /* Private */,
+      14,    1,  239,    2, 0x08 /* Private */,
+      16,    0,  242,    2, 0x08 /* Private */,
+      17,    0,  243,    2, 0x08 /* Private */,
+      18,    0,  244,    2, 0x08 /* Private */,
+      19,    1,  245,    2, 0x08 /* Private */,
+      20,    1,  248,    2, 0x08 /* Private */,
+      21,    1,  251,    2, 0x08 /* Private */,
+      22,    1,  254,    2, 0x08 /* Private */,
+      23,    1,  257,    2, 0x08 /* Private */,
+      26,    0,  260,    2, 0x08 /* Private */,
+      27,    0,  261,    2, 0x08 /* Private */,
+      28,    0,  262,    2, 0x08 /* Private */,
+      29,    1,  263,    2, 0x08 /* Private */,
+      30,    0,  266,    2, 0x08 /* Private */,
+      31,    0,  267,    2, 0x08 /* Private */,
+      32,    0,  268,    2, 0x08 /* Private */,
+      33,    0,  269,    2, 0x08 /* Private */,
+      34,    0,  270,    2, 0x08 /* Private */,
+      35,    0,  271,    2, 0x08 /* Private */,
+      36,    0,  272,    2, 0x08 /* Private */,
+      37,    0,  273,    2, 0x08 /* Private */,
+      38,    0,  274,    2, 0x08 /* Private */,
+      39,    0,  275,    2, 0x08 /* Private */,
+      40,    0,  276,    2, 0x08 /* Private */,
+      41,    0,  277,    2, 0x08 /* Private */,
+      42,    0,  278,    2, 0x08 /* Private */,
+      43,    0,  279,    2, 0x08 /* Private */,
+      44,    0,  280,    2, 0x08 /* Private */,
+      45,    0,  281,    2, 0x08 /* Private */,
+      46,    0,  282,    2, 0x08 /* Private */,
+      47,    0,  283,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -165,6 +185,15 @@ static const uint qt_meta_data_DefaultHidManager[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 8,    9,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -216,6 +245,15 @@ void DefaultHidManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         case 29: _t->heTurnLeft(); break;
         case 30: _t->heTurnRight(); break;
         case 31: _t->hePlayPause(); break;
+        case 32: _t->ctrl1(); break;
+        case 33: _t->shft1(); break;
+        case 34: _t->ctrl2(); break;
+        case 35: _t->shft2(); break;
+        case 36: _t->ctrl3(); break;
+        case 37: _t->shft3(); break;
+        case 38: _t->ctrl4(); break;
+        case 39: _t->shft4(); break;
+        case 40: _t->createSquare(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -263,13 +301,13 @@ int DefaultHidManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 32)
+        if (_id < 41)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 32;
+        _id -= 41;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 32)
+        if (_id < 41)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 32;
+        _id -= 41;
     }
     return _id;
 }

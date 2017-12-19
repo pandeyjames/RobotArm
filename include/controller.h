@@ -3,12 +3,14 @@
 
 #include<gmParametricsModule>
 #include "robotarm.h"
+#include "control.h"
 #include <ctime>
 #include <vector>
 #include<memory>
 #include "parametrics/curves/gmpline.h"
 
 class Scenario;
+class Control;
 
 
 class Controller: public GMlib::SceneObject {

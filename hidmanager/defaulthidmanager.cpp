@@ -384,18 +384,17 @@ void DefaultHidManager::heSelectRobotArm() {
 
             _controller = dynamic_cast<Controller*>(obj);
             _controller_selected = true;
+            std::cout<<"Selected";
         }
     }
-    std::cout<<"Selected";
+
 }
 
 void DefaultHidManager::heReturnToStart() {
 
     std::cout<<"Return to start/reset";
     if(_controller_selected) {
-
-        auto test = true;
-
+auto test =true;
         if(!_controller->reset)
             _controller->reset =true;
         else
@@ -413,6 +412,62 @@ void DefaultHidManager::hePlayPause() {
             _controller->IK =true;
         else
             _controller->IK=false;
+    }
+}
+
+void DefaultHidManager::ctrl1()
+{
+        if(_controller_selected) {
+            _controller->manual_control(1);
+        }
+}
+void DefaultHidManager::shft1()
+{
+        if(_controller_selected) {
+            _controller->manual_control(2);
+        }
+}
+void DefaultHidManager::ctrl2()
+{
+        if(_controller_selected) {
+            _controller->manual_control(3);
+        }
+}
+void DefaultHidManager::shft2()
+{
+        if(_controller_selected) {
+            _controller->manual_control(4);
+        }
+}
+void DefaultHidManager::ctrl3()
+{
+        if(_controller_selected) {
+            _controller->manual_control(5);
+        }
+}
+void DefaultHidManager::shft3()
+{
+        if(_controller_selected) {
+            _controller->manual_control(6);
+        }
+}
+void DefaultHidManager::ctrl4()
+{
+        if(_controller_selected) {
+            _controller->manual_control(7);
+        }
+}
+void DefaultHidManager::shft4()
+{
+        if(_controller_selected) {
+            _controller->manual_control(8);
+        }
+}
+
+void DefaultHidManager::createSquare()
+{
+    if(_controller_selected) {
+        _controller->createSquare(GMlib::Point<float,3>(10,5,5),10);
     }
 }
 void DefaultHidManager::heTurnLeft(){
@@ -754,40 +809,100 @@ void DefaultHidManager::setupDefaultHidBindings() {
                                this, SLOT(heReturnToStart()),
                                OGL_TRIGGER);
 
-    QString ha_id_up =
-            registerHidAction( "Object interaction",
-                               "Move Arm up",
-                               "",
-                               this, SLOT(heTurnUp()),
-                               OGL_TRIGGER);
+//    QString ha_id_up =
+//            registerHidAction( "Object interaction",
+//                               "Move Arm up",
+//                               "",
+//                               this, SLOT(heTurnUp()),
+//                               OGL_TRIGGER);
 
-    QString ha_id_down =
-            registerHidAction( "Object interaction",
-                               "Move Arm down",
-                               "",
-                               this, SLOT(heTurnDown()),
-                               OGL_TRIGGER);
+//    QString ha_id_down =
+//            registerHidAction( "Object interaction",
+//                               "Move Arm down",
+//                               "",
+//                               this, SLOT(heTurnDown()),
+//                               OGL_TRIGGER);
 
-    QString ha_id_left =
-            registerHidAction( "Object interaction",
-                               "Move Arm left",
-                               "",
-                               this, SLOT(heTurnLeft()),
-                               OGL_TRIGGER);
+//    QString ha_id_left =
+//            registerHidAction( "Object interaction",
+//                               "Move Arm left",
+//                               "",
+//                               this, SLOT(heTurnLeft()),
+//                               OGL_TRIGGER);
 
-    QString ha_id_right =
-            registerHidAction( "Object interaction",
-                               "Move Arm right",
-                               "",
-                               this, SLOT(heTurnRight()),
-                               OGL_TRIGGER);
+//    QString ha_id_right =
+//            registerHidAction( "Object interaction",
+//                               "Move Arm right",
+//                               "",
+//                               this, SLOT(heTurnRight()),
+//                               OGL_TRIGGER);
     QString ha_id_p_p =
             registerHidAction( "Object interaction",
                                "Play/Pause",
                                "",
                                this, SLOT(hePlayPause()),
                                OGL_TRIGGER);
+    QString ha_id_1 =
+            registerHidAction( "Object interaction",
+                               "Joint 1+",
+                               "",
+                               this, SLOT(ctrl1()),
+                               OGL_TRIGGER);
+    QString ha_id_11 =
+            registerHidAction( "Object interaction",
+                               "Joint 1-",
+                               "",
+                               this, SLOT(shft1()),
+                               OGL_TRIGGER);
 
+
+    QString ha_id_2 =
+            registerHidAction( "Object interaction",
+                               "Joint 2+",
+                               "",
+                               this, SLOT(ctrl2()),
+                               OGL_TRIGGER);
+    QString ha_id_22 =
+            registerHidAction( "Object interaction",
+                               "Joint 2-",
+                               "",
+                               this, SLOT(shft2()),
+                               OGL_TRIGGER);
+
+
+    QString ha_id_3 =
+            registerHidAction( "Object interaction",
+                               "Joint 3+",
+                               "",
+                               this, SLOT(ctrl3()),
+                               OGL_TRIGGER);
+    QString ha_id_33 =
+            registerHidAction( "Object interaction",
+                               "Joint 3-",
+                               "",
+                               this, SLOT(shft3()),
+                               OGL_TRIGGER);
+
+
+
+    QString ha_id_4 =
+            registerHidAction( "Object interaction",
+                               "Joint 4+",
+                               "",
+                               this, SLOT(ctrl4()),
+                               OGL_TRIGGER);
+    QString ha_id_44 =
+            registerHidAction( "Object interaction",
+                               "Joint 4-",
+                               "",
+                               this, SLOT(shft4()),
+                               OGL_TRIGGER);
+    QString ha_id_createsquare =
+            registerHidAction( "Object interaction",
+                               "Create Square",
+                               "",
+                               this, SLOT(createSquare()),
+                               OGL_TRIGGER);
 
 
 
@@ -819,12 +934,17 @@ void DefaultHidManager::setupDefaultHidBindings() {
 
     //Registering Keyboard inputs
     registerHidMapping( ha_id_select_robotarm,              new KeyPressInput( Qt::Key_L ) );
-    registerHidMapping( ha_id_return_to_start,              new KeyPressInput( Qt::Key_Space ) );
-    registerHidMapping( ha_id_up,                           new KeyPressInput( Qt::Key_W ) );
-    registerHidMapping( ha_id_down,                         new KeyPressInput( Qt::Key_S ) );
-    registerHidMapping( ha_id_left,                         new KeyPressInput( Qt::Key_A ) );
-    registerHidMapping( ha_id_right,                        new KeyPressInput( Qt::Key_D ) );
+    registerHidMapping( ha_id_return_to_start,              new KeyPressInput( Qt::Key_Escape));
+    registerHidMapping( ha_id_1,                            new KeyPressInput( Qt::Key_1 ) );
+    registerHidMapping( ha_id_11,                           new KeyPressInput( Qt::Key_2 ) );
+    registerHidMapping( ha_id_2,                            new KeyPressInput( Qt::Key_3) );
+    registerHidMapping( ha_id_22,                           new KeyPressInput( Qt::Key_4 ) );
+    registerHidMapping( ha_id_3,                            new KeyPressInput( Qt::Key_A ) );
+    registerHidMapping( ha_id_33,                           new KeyPressInput( Qt::Key_S ) );
+    registerHidMapping( ha_id_4,                            new KeyPressInput( Qt::Key_D ) );
+    registerHidMapping( ha_id_44,                           new KeyPressInput( Qt::Key_F ) );
     registerHidMapping( ha_id_p_p,                          new KeyPressInput( Qt::Key_P ) );
+    registerHidMapping( ha_id_createsquare,                 new KeyPressInput( Qt::Key_C ) );
 }
 
 void DefaultHidManager::init(GMlibWrapper& gmlib) {

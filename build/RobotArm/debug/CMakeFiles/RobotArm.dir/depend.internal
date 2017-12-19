@@ -2538,6 +2538,7 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj
  C:/Program Files (x86)/glew/include/GL/glew.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QEvent
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QHash
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QScopedPointer
@@ -2548,6 +2549,7 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QVariant
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCore
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCoreDepends
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractanimation.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstracteventdispatcher.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
@@ -3007,10 +3009,13 @@ CMakeFiles/RobotArm.dir/hidmanager/defaulthidmanager.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/hidmanager/hidmanager.h
  C:/Users/Admin/Desktop/RobotArm/hidmanager/standardhidmanager.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
+ C:/Users/Admin/Desktop/RobotArm/include/control.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
  C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/scenario.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
 CMakeFiles/RobotArm.dir/hidmanager/hidaction.cpp.obj
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QEvent
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
@@ -5918,12 +5923,6 @@ CMakeFiles/RobotArm.dir/src/arm.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/src/arm.cpp
 CMakeFiles/RobotArm.dir/src/controller.cpp.obj
- ../../../application/gmlibwrapper.h
- ../../../include/arm.h
- ../../../include/controller.h
- ../../../include/griper.h
- ../../../include/robotarm.h
- ../../../include/scenario.h
  ../../gmlib/include/core/containers/gmarray.h
  ../../gmlib/include/core/containers/gmdmatrix.h
  ../../gmlib/include/core/containers/gmdvector.h
@@ -6128,10 +6127,12 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj
  ../../gmlib/include/scene/utils/gmmaterial.h
  ../../gmlib/include/scene/visualizers/gmselectorgridvisualizer.h
  C:/Program Files (x86)/glew/include/GL/glew.h
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QSize
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QStringListModel
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
@@ -6214,6 +6215,7 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtransform.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qwindowdefs_win.h
+ C:/Users/Admin/Desktop/RobotArm/application/gmlibwrapper.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarray.c
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarray.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/core/src/containers/gmarrayt.c
@@ -6443,9 +6445,16 @@ CMakeFiles/RobotArm.dir/src/controller.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorgridvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
+ C:/Users/Admin/Desktop/RobotArm/include/arm.h
+ C:/Users/Admin/Desktop/RobotArm/include/control.h
+ C:/Users/Admin/Desktop/RobotArm/include/controller.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
+ C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
+ C:/Users/Admin/Desktop/RobotArm/include/scenario.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
  C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
 CMakeFiles/RobotArm.dir/src/griper.cpp.obj
- ../../../include/griper.h
  ../../gmlib/include/core/containers/gmarray.h
  ../../gmlib/include/core/containers/gmdmatrix.h
  ../../gmlib/include/core/containers/gmdvector.h
@@ -6878,6 +6887,7 @@ CMakeFiles/RobotArm.dir/src/griper.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorgridvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
+ C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/src/griper.cpp
 CMakeFiles/RobotArm.dir/src/robotarm.cpp.obj
  ../../gmlib/include/core/containers/gmarray.h
@@ -7583,11 +7593,13 @@ CMakeFiles/RobotArm.dir/src/scenario.cpp.obj
  ../../gmlib/include/scene/visualizers/gmstdrepvisualizer.h
  ../../gmlib/include/scene/visualizers/gmsurroundingspherevisualizer.h
  C:/Program Files (x86)/glew/include/GL/glew.h
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QList
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QObject
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QRectF
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QSize
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QStringListModel
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractitemmodel.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
@@ -7944,11 +7956,14 @@ CMakeFiles/RobotArm.dir/src/scenario.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmsurroundingspherevisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
+ C:/Users/Admin/Desktop/RobotArm/include/control.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
  C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/scenario.h
  C:/Users/Admin/Desktop/RobotArm/include/simulator.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
  C:/Users/Admin/Desktop/RobotArm/src/scenario.cpp
 CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
  ../../gmlib/include/core/containers/gmarray.h
@@ -8155,6 +8170,8 @@ CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
  ../../gmlib/include/scene/visualizers/gmselectorgridvisualizer.h
  C:/Program Files (x86)/glew/include/GL/glew.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QDir
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
+ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qalgorithms.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qarraydata.h
  C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qatomic.h
@@ -8480,8 +8497,11 @@ CMakeFiles/RobotArm.dir/src/simulator.cpp.obj
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmselectorvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/gmlib/modules/scene/src/visualizers/gmstdrepvisualizer.h
  C:/Users/Admin/Desktop/RobotArm/include/arm.h
+ C:/Users/Admin/Desktop/RobotArm/include/control.h
  C:/Users/Admin/Desktop/RobotArm/include/controller.h
  C:/Users/Admin/Desktop/RobotArm/include/griper.h
  C:/Users/Admin/Desktop/RobotArm/include/robotarm.h
  C:/Users/Admin/Desktop/RobotArm/include/simulator.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
+ C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
  C:/Users/Admin/Desktop/RobotArm/src/simulator.cpp

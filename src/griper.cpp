@@ -1,4 +1,4 @@
-#include "griper.h"
+#include "../include/griper.h"
 
 Griper::Griper(GMlib::Vector<float,3> pos){
     // Start values
