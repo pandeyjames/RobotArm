@@ -470,6 +470,12 @@ void DefaultHidManager::createSquare()
         _controller->createSquare(GMlib::Point<float,3>(10,5,5),10);
     }
 }
+void DefaultHidManager::createCircle()
+{
+    if(_controller_selected) {
+        _controller->createCircle(GMlib::Point<float,3>(10,5,5),2);
+    }
+}
 void DefaultHidManager::heTurnLeft(){
 
     if(_controller_selected) {
@@ -903,6 +909,12 @@ void DefaultHidManager::setupDefaultHidBindings() {
                                "",
                                this, SLOT(createSquare()),
                                OGL_TRIGGER);
+    QString ha_id_createcircle =
+            registerHidAction( "Object interaction",
+                               "Create Circle",
+                               "",
+                               this, SLOT(createCircle()),
+                               OGL_TRIGGER);
 
 
 
@@ -944,7 +956,8 @@ void DefaultHidManager::setupDefaultHidBindings() {
     registerHidMapping( ha_id_4,                            new KeyPressInput( Qt::Key_D ) );
     registerHidMapping( ha_id_44,                           new KeyPressInput( Qt::Key_F ) );
     registerHidMapping( ha_id_p_p,                          new KeyPressInput( Qt::Key_P ) );
-    registerHidMapping( ha_id_createsquare,                 new KeyPressInput( Qt::Key_C ) );
+    registerHidMapping( ha_id_createsquare,                 new KeyPressInput( Qt::Key_B ) );
+    registerHidMapping( ha_id_createcircle,                 new KeyPressInput( Qt::Key_O ) );
 }
 
 void DefaultHidManager::init(GMlibWrapper& gmlib) {

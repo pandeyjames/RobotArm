@@ -209,6 +209,9 @@
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/arm.h">
 			<Option target="RobotArm"/>
 		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/control.h">
+			<Option target="RobotArm"/>
+		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/include/controller.h">
 			<Option target="RobotArm"/>
 		</Unit>
@@ -225,6 +228,9 @@
 			<Option target="RobotArm"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/arm.cpp">
+			<Option target="RobotArm"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/control.cpp">
 			<Option target="RobotArm"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/src/controller.cpp">
@@ -258,6 +264,12 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\Qt5.7.0\5.7\mingw53_32\lib\cmake\Qt5Core\"/>
 		</Unit>
 		<Unit filename="C:/Users/Admin/Desktop/RobotArm/../../../../Qt/Qt5.7.0/5.7/mingw53_32/lib/cmake/Qt5Quick/Qt5QuickConfigVersion.cmake">

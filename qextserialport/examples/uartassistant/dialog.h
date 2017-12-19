@@ -35,6 +35,10 @@ private Q_SLOTS:
 
     void onPortAddedOrRemoved();
 
+    void on_sendButton_clicked();
+
+    void on_sendButton_pressed();
+
 private:
     Ui::Dialog *ui;
     QTimer *timer;

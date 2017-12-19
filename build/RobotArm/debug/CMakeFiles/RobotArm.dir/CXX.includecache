@@ -1664,10 +1664,6 @@ C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QHash
 qhash.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qhash.h
 
-C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QIODevice
-qiodevice.h
-C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qiodevice.h
-
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QList
 qlist.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qlist.h
@@ -2051,10 +2047,6 @@ qtcoreversion.h
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qtcoreversion.h
 
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtCoreDepends
-
-C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/QtGlobal
-qglobal.h
-C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qglobal.h
 
 C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtCore/qabstractanimation.h
 QtCore/qobject.h
@@ -6083,8 +6075,6 @@ griper.h
 C:/Users/Admin/Desktop/RobotArm/include/griper.h
 
 C:/Users/Admin/Desktop/RobotArm/include/control.h
-../qextserialport/src/qextserialport.h
-C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
 
 C:/Users/Admin/Desktop/RobotArm/include/controller.h
 gmParametricsModule
@@ -6138,21 +6128,11 @@ vector
 memory
 -
 
-C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport.h
-QtCore/QIODevice
--
-qextserialport_global.h
-C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
-termios.h
--
-
-C:/Users/Admin/Desktop/RobotArm/qextserialport/src/qextserialport_global.h
-QtCore/QtGlobal
--
-
 C:/Users/Admin/Desktop/RobotArm/src/arm.cpp
 ../include/arm.h
 C:/Users/Admin/Desktop/RobotArm/include/arm.h
+
+C:/Users/Admin/Desktop/RobotArm/src/control.cpp
 
 C:/Users/Admin/Desktop/RobotArm/src/controller.cpp
 ../include/controller.h

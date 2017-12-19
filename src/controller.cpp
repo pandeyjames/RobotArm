@@ -1,9 +1,9 @@
 #include "../include/controller.h"
 #include "math.h"
 #include "../include/scenario.h"
-
+//class Control;
 Controller::Controller(){
-
+//auto c=new Control();
 }
 
 void Controller::motionrotate()
@@ -21,7 +21,7 @@ void Controller::addRobotArm(std::shared_ptr<RobotArm> robotarm){
 
 
     move_target_positions.push_back(GMlib::Point<float,3>(35,0,10));
-    //move_target_positions.push_back(GMlib::Point<float,3>(20,-5,6));
+    move_target_positions.push_back(GMlib::Point<float,3>(20,-5,6));
     //move_target_positions.push_back(GMlib::Point<float,3>(20,5,10));
     //move_target_positions.push_back(GMlib::Point<float,3>(15,15,10));
     //createSquare(GMlib::Point<float, 3>(10,10,-5),100.0f);
@@ -124,20 +124,21 @@ void Controller::createSquare(GMlib::Point<float, 3> p, float len)
         }
 
     }
-    sq_created = true;
+    //sq_created = true;
 }
 void Controller::createCircle(GMlib::Point<float, 3> c,float r){
-    auto A = arm[0]->get_tip_pos();
+    //auto A = arm[0]->get_tip_pos();
     //auto c = robotarm->getSph()->getPos();
-    auto x=0.0f, y=0.0f, z=c(2);
-    for(int i=0; i<M_2PI; i++){
-        x = r*cos(i);
-        y = r*sin(i);
-        move_target_positions.push_back(GMlib::Vector<float,3>(x,y,z));
-        std::cout<<move_target_positions[i]<<std::endl;
-    }
-
-
+for (int i=0;i<360;i++){
+    auto x=c(0), y=c(1), z=c(2);
+    //auto x1=
+    y=sqrt(r*r-x*x);
+    move_target_positions[i]=GMlib::Point<float,3> (x,y,z);
+}
+for (int g=0;g<move_target_positions.size();g++){
+    //move_target_positions.push_back(sq_points[g]);
+    std::cout<<g<<". "<<move_target_positions[g]<<std::endl;
+}
 }
 
 
@@ -185,7 +186,8 @@ void Controller::updateAngles(std::vector<GMlib::Angle> &angles,GMlib::Point<flo
 
 void Controller::localSimulate(double dt) {
 
-    //restart();
+    if(reset)
+    restart();
     //createSquare(GMlib::Point<float, 3>(10,1,5), 5);
     move_from_A_to_B(previous_tip_position,tip_position);
     if(IK){
@@ -214,7 +216,6 @@ void Controller::localSimulate(double dt) {
     //if(turning_left) turn_left(dt);
     //if(turning_right) turn_right(dt);
     //std::cout<<dt;
-    //robotarm->movePreDef(dt);
 
 
 }
@@ -238,8 +239,6 @@ void Controller::run_inverse_kinematicts(double dt){
 }
 
 void Controller::restart() {
-
-    if(reset) {
         std::cout<<"Restart !"<<std::endl;
         moving = false;
         IK=false;
@@ -247,15 +246,16 @@ void Controller::restart() {
         // Reset position
         move_target_positions.clear();
         Angle.clear();
-//        auto pos = GMlib::Point<float,3>(0.0f, 0.0f, 0.0f);
-//        auto dir = GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f);
-//        auto up = GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f);
+        std::cout<<"Positions and Angles cleared"<<std::endl;
+        //        auto pos = GMlib::Point<float,3>(0.0f, 0.0f, 0.0f);
+        //        auto dir = GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f);
+        //        auto up = GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f);
 
-//        body->set(pos, dir, up);
+        //        body->set(pos, dir, up);
 
         // arm
 
-        arm[0]->getJoints()[0]->rotate((10),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
+        arm[0]->getJoints()[0]->rotate((30),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         arm[0]->getJoints()[1]->rotate((30), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         arm[0]->getJoints()[2]->rotate((60),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
 
@@ -281,9 +281,8 @@ void Controller::restart() {
         //            arm[i]->getJoints()[1]->rotateGlobal((-lAngle-angle2 ), GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         //            arm[i]->getJoints()[2]->rotateGlobal(((gAngle_radians+angle3)),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
 
-        //            reset = true;
+                   reset = false;
         //        }
-    }
 }
 
 void Controller::turn_left(double dt){
@@ -314,29 +313,29 @@ void Controller::manual_control(int op)
     switch(op){
     case 1:
         //if((angle4.getRad()+0.0872665)<max_angle.getRad()&& (angle4.getRad()+0.0872665)>min_angle.getRad())
-        plate->rotate((angle4.getRad()+0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
+        plate->rotate((angle4.getRad()+0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         break;
     case 2:
         //if((angle4.getRad()-0.0872665)<max_angle.getRad()&& (angle4.getRad()-0.0872665)>min_angle.getRad())
-        plate->rotate((angle4.getRad()-0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
+        plate->rotate((angle4.getRad()-0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
         break;
     case 3:
-        arm[0]->getJoints()[0]->rotate((angle1.getRad()+0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
+        arm[0]->getJoints()[0]->rotate((angle1.getRad()+0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         break;
     case 4:
-        arm[0]->getJoints()[0]->rotate((angle1.getRad()-0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
+        arm[0]->getJoints()[0]->rotate((angle1.getRad()-0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
         break;
     case 5:
-        arm[0]->getJoints()[1]->rotate((angle2.getRad()+0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
+        arm[0]->getJoints()[1]->rotate((angle2.getRad()+0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         break;
     case 6:
-        arm[0]->getJoints()[1]->rotate((angle2.getRad()-0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
+        arm[0]->getJoints()[1]->rotate((angle2.getRad()-0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
         break;
     case 7:
-        arm[0]->getJoints()[2]->rotate((angle3.getRad()+0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
+        arm[0]->getJoints()[2]->rotate((angle3.getRad()+0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
         break;
     case 8:
-        arm[0]->getJoints()[2]->rotate((angle3.getRad()-0.0872665),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
+        arm[0]->getJoints()[2]->rotate((angle3.getRad()-0.0174533),GMlib::Vector<float,3>(0.0f, 0.0f, -1.0f));
         break;
     default:
         std::cout<<"Can't be controlled manually, simulation is going on"<<std::endl;
@@ -389,21 +388,22 @@ void Controller::move(double dt)
         if(elbowup){
             std::cout<<"elbowup= ";
             //arm[0]->getJoints()[0]->rotate((a3.getRad()+A0.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
-plate->rotate((angle4.getRad()-a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
+            if (tip_position(1)>0)
+            plate->rotate((angle4.getRad()+a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
             arm[0]->getJoints()[0]->rotate((angle1.getRad()-a1.getRad())*var,GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
             arm[0]->getJoints()[1]->rotate(-(a2.getRad()-angle2.getRad())*var,GMlib::Vector<float,3>(0.0f, 0.0f, 1.0f));
             arm[0]->getJoints()[2]->rotate((a3.getRad()+angle3.getRad())*var,GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
         }
         else{
             std::cout<<"elbowdown= ";
-plate->rotateGlobal((angle4.getRad()-a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
+            plate->rotateGlobal((angle4.getRad()-a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
             arm[0]->getJoints()[0]->rotate((a1.getRad()+angle1.getRad())*var,GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
             arm[0]->getJoints()[1]->rotate(-(a2.getRad()-angle2.getRad()*var),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
             arm[0]->getJoints()[2]->rotate((a3.getRad()+angle3.getRad())*var,GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
         }
         //turn(dt);
-        //_scenario->createLine(previous_tip_position,tip_position);
-        //turn(dt);
+        //createLine(previous_tip_position,tip_position);
+
         //}
         //}
         tick=0.0f;
@@ -428,5 +428,16 @@ void Controller::turn(double dt){
         plate->rotate((angle4.getRad()-a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
     else
         plate->rotateGlobal((angle4.getRad()-a4.getRad()),GMlib::Vector<float,3>(0.0f,  0.0f, 1.0f));
+}
+
+void Controller::createLine(GMlib::Point<float, 3> A, GMlib::Point<float, 3> B)
+{
+    ln = std::make_shared<GMlib::PLine<float>>(A,B);
+    ln->toggleDefaultVisualizer();
+    ln->replot(10,1);
+
+}
+void Controller::insert(GMlib::Scene &scene){
+ scene.insert(ln.get());
 }
 

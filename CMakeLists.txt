@@ -9,6 +9,10 @@ set(CMAKE_CXX_STANDARD 14)
 
 message("CMAKE_CXX_COMPILER_ID: ${CMAKE_CXX_COMPILER_ID}")
 
+
+
+
+
 # Compiler options
 if(MSVC)
   message("Compiler: ${CMAKE_CXX_COMPILER_ID}")
@@ -63,6 +67,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 find_package(Qt5Core 5.1)
 find_package(Qt5Quick 5.1)
 find_package(Qt5Gui 5.1)
+find_package(Qt5Core REQUIRED)
+
+#set(SOURCE_FILES main.cpp)
+#add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
+#qt5_use_modules(${CMAKE_PROJECT_NAME} Core SerialPort)
 
 ################################
 # Find GMlib
@@ -123,7 +132,7 @@ set( HDRS
   include/griper.h
   include/simulator.h
   include/controller.h
-  #include/control.h
+  include/control.h
   )
 
 set( SRCS
@@ -150,7 +159,7 @@ set( SRCS
   src/griper.cpp
   src/simulator.cpp
   src/controller.cpp
-  #src/control.cpp
+  src/control.cpp
   )
 
 #########
@@ -191,6 +200,7 @@ target_link_libraries( ${CMAKE_PROJECT_NAME}
   Qt5::Core
   Qt5::Quick
   Qt5::Gui
+  #QSerialPort
   ${GLEW_LIBRARIES}
   ${OPENGL_LIBRARIES}
   ${COLLISION_LIBRARIES}

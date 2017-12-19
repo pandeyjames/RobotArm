@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_DefaultHidManager_t {
-    QByteArrayData data[48];
-    char stringdata0[684];
+    QByteArrayData data[49];
+    char stringdata0[697];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -76,7 +76,8 @@ QT_MOC_LITERAL(43, 647, 5), // "ctrl3"
 QT_MOC_LITERAL(44, 653, 5), // "shft3"
 QT_MOC_LITERAL(45, 659, 5), // "ctrl4"
 QT_MOC_LITERAL(46, 665, 5), // "shft4"
-QT_MOC_LITERAL(47, 671, 12) // "createSquare"
+QT_MOC_LITERAL(47, 671, 12), // "createSquare"
+QT_MOC_LITERAL(48, 684, 12) // "createCircle"
 
     },
     "DefaultHidManager\0signToggleSimulation\0"
@@ -97,7 +98,7 @@ QT_MOC_LITERAL(47, 671, 12) // "createSquare"
     "heReturnToStart\0heTurnUp\0heTurnDown\0"
     "heTurnLeft\0heTurnRight\0hePlayPause\0"
     "ctrl1\0shft1\0ctrl2\0shft2\0ctrl3\0shft3\0"
-    "ctrl4\0shft4\0createSquare"
+    "ctrl4\0shft4\0createSquare\0createCircle"
 };
 #undef QT_MOC_LITERAL
 
@@ -107,7 +108,7 @@ static const uint qt_meta_data_DefaultHidManager[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      41,   14, // methods
+      42,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -115,49 +116,50 @@ static const uint qt_meta_data_DefaultHidManager[] = {
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,  219,    2, 0x06 /* Public */,
-       3,    0,  220,    2, 0x06 /* Public */,
+       1,    0,  224,    2, 0x06 /* Public */,
+       3,    0,  225,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    0,  221,    2, 0x0a /* Public */,
-       5,    0,  222,    2, 0x08 /* Private */,
-       6,    0,  223,    2, 0x08 /* Private */,
-       7,    1,  224,    2, 0x08 /* Private */,
-      10,    1,  227,    2, 0x08 /* Private */,
-      11,    1,  230,    2, 0x08 /* Private */,
-      12,    1,  233,    2, 0x08 /* Private */,
-      13,    1,  236,    2, 0x08 /* Private */,
-      14,    1,  239,    2, 0x08 /* Private */,
-      16,    0,  242,    2, 0x08 /* Private */,
-      17,    0,  243,    2, 0x08 /* Private */,
-      18,    0,  244,    2, 0x08 /* Private */,
-      19,    1,  245,    2, 0x08 /* Private */,
-      20,    1,  248,    2, 0x08 /* Private */,
-      21,    1,  251,    2, 0x08 /* Private */,
-      22,    1,  254,    2, 0x08 /* Private */,
-      23,    1,  257,    2, 0x08 /* Private */,
-      26,    0,  260,    2, 0x08 /* Private */,
-      27,    0,  261,    2, 0x08 /* Private */,
-      28,    0,  262,    2, 0x08 /* Private */,
-      29,    1,  263,    2, 0x08 /* Private */,
-      30,    0,  266,    2, 0x08 /* Private */,
-      31,    0,  267,    2, 0x08 /* Private */,
-      32,    0,  268,    2, 0x08 /* Private */,
-      33,    0,  269,    2, 0x08 /* Private */,
-      34,    0,  270,    2, 0x08 /* Private */,
-      35,    0,  271,    2, 0x08 /* Private */,
-      36,    0,  272,    2, 0x08 /* Private */,
-      37,    0,  273,    2, 0x08 /* Private */,
-      38,    0,  274,    2, 0x08 /* Private */,
-      39,    0,  275,    2, 0x08 /* Private */,
-      40,    0,  276,    2, 0x08 /* Private */,
-      41,    0,  277,    2, 0x08 /* Private */,
-      42,    0,  278,    2, 0x08 /* Private */,
-      43,    0,  279,    2, 0x08 /* Private */,
-      44,    0,  280,    2, 0x08 /* Private */,
-      45,    0,  281,    2, 0x08 /* Private */,
-      46,    0,  282,    2, 0x08 /* Private */,
-      47,    0,  283,    2, 0x08 /* Private */,
+       4,    0,  226,    2, 0x0a /* Public */,
+       5,    0,  227,    2, 0x08 /* Private */,
+       6,    0,  228,    2, 0x08 /* Private */,
+       7,    1,  229,    2, 0x08 /* Private */,
+      10,    1,  232,    2, 0x08 /* Private */,
+      11,    1,  235,    2, 0x08 /* Private */,
+      12,    1,  238,    2, 0x08 /* Private */,
+      13,    1,  241,    2, 0x08 /* Private */,
+      14,    1,  244,    2, 0x08 /* Private */,
+      16,    0,  247,    2, 0x08 /* Private */,
+      17,    0,  248,    2, 0x08 /* Private */,
+      18,    0,  249,    2, 0x08 /* Private */,
+      19,    1,  250,    2, 0x08 /* Private */,
+      20,    1,  253,    2, 0x08 /* Private */,
+      21,    1,  256,    2, 0x08 /* Private */,
+      22,    1,  259,    2, 0x08 /* Private */,
+      23,    1,  262,    2, 0x08 /* Private */,
+      26,    0,  265,    2, 0x08 /* Private */,
+      27,    0,  266,    2, 0x08 /* Private */,
+      28,    0,  267,    2, 0x08 /* Private */,
+      29,    1,  268,    2, 0x08 /* Private */,
+      30,    0,  271,    2, 0x08 /* Private */,
+      31,    0,  272,    2, 0x08 /* Private */,
+      32,    0,  273,    2, 0x08 /* Private */,
+      33,    0,  274,    2, 0x08 /* Private */,
+      34,    0,  275,    2, 0x08 /* Private */,
+      35,    0,  276,    2, 0x08 /* Private */,
+      36,    0,  277,    2, 0x08 /* Private */,
+      37,    0,  278,    2, 0x08 /* Private */,
+      38,    0,  279,    2, 0x08 /* Private */,
+      39,    0,  280,    2, 0x08 /* Private */,
+      40,    0,  281,    2, 0x08 /* Private */,
+      41,    0,  282,    2, 0x08 /* Private */,
+      42,    0,  283,    2, 0x08 /* Private */,
+      43,    0,  284,    2, 0x08 /* Private */,
+      44,    0,  285,    2, 0x08 /* Private */,
+      45,    0,  286,    2, 0x08 /* Private */,
+      46,    0,  287,    2, 0x08 /* Private */,
+      47,    0,  288,    2, 0x08 /* Private */,
+      48,    0,  289,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -185,6 +187,7 @@ static const uint qt_meta_data_DefaultHidManager[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 8,    9,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -254,6 +257,7 @@ void DefaultHidManager::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         case 38: _t->ctrl4(); break;
         case 39: _t->shft4(); break;
         case 40: _t->createSquare(); break;
+        case 41: _t->createCircle(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -301,13 +305,13 @@ int DefaultHidManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 41)
+        if (_id < 42)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 41;
+        _id -= 42;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 41)
+        if (_id < 42)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 41;
+        _id -= 42;
     }
     return _id;
 }

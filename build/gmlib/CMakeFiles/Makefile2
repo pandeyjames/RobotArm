@@ -486,9 +486,9 @@ modules/scene/src/preinstall:
 # Target rules for target modules/scene/src/CMakeFiles/gmscene.dir
 
 # All Build rule for target.
+modules/scene/src/CMakeFiles/gmscene.dir/all: modules/scene/src/CMakeFiles/sceneDependencyTarget.dir/all
 modules/scene/src/CMakeFiles/gmscene.dir/all: modules/core/src/CMakeFiles/gmcore.dir/all
 modules/scene/src/CMakeFiles/gmscene.dir/all: modules/opengl/src/CMakeFiles/gmopengl.dir/all
-modules/scene/src/CMakeFiles/gmscene.dir/all: modules/scene/src/CMakeFiles/sceneDependencyTarget.dir/all
 	$(MAKE) -f modules\scene\src\CMakeFiles\gmscene.dir\build.make modules/scene/src/CMakeFiles/gmscene.dir/depend
 	$(MAKE) -f modules\scene\src\CMakeFiles\gmscene.dir\build.make modules/scene/src/CMakeFiles/gmscene.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Admin\Desktop\RobotArm\build\gmlib\CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target gmscene"

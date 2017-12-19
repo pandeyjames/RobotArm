@@ -6,13 +6,11 @@ RobotArm::RobotArm(GMlib::Point<float, 3> pos){
     makeArm(pos);
     makeBoard();
     makeSph(pos);
-
-
 }
 
 void RobotArm::makeBody(GMlib::Point<float, 3> pos){
 
-    body = std::make_shared<GMlib::PCylinder<float>>(0.1,0.1,0.1);
+    body = std::make_shared<GMlib::PCylinder<float>>(5.0,5.0,5.0);
     plate = std::make_shared<GMlib::PCircle<float>>(5.0f);
 //    auto x = new GMlib::PLine<float>(plate->getPos(), plate->getDir());
 //    auto y = new GMlib::PLine<float>(plate->getPos(), plate->getSide());
@@ -103,10 +101,8 @@ void RobotArm::getSphPosition()
 {
     auto present = sph->getMatrixGlobal();
     auto sph_global = sph->getGlobalPos();
-
     auto present_inverted = present;
     present_inverted.invertOrthoNormal(); //scene to base
-
     sph_pos = present_inverted*sph_global;
 }
 

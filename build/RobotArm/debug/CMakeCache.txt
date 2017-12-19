@@ -179,9 +179,6 @@ LIB_DIR:PATH=
 //No help, variable specified on the command line.
 LINK_DIR:PATH=
 
-//Path to a library.
-PATHS:FILEPATH=PATHS-NOTFOUND
-
 //No help, variable specified on the command line.
 QEXTSERIALPORT_INCDIR:PATH=C:/Users/Admin/Desktop/RobotArm/qextserialport
 

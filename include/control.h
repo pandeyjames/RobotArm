@@ -1,23 +1,23 @@
-#ifndef CONTROL_H
-#define CONTROL_H
+//#ifndef CONTROL_H
+//#define CONTROL_H
 
-#include "../qextserialport/src/qextserialport.h"
+////#include "../qextserialport/src/qextserialport.h"
 
-class Control
-{
+//class Control
+//{
 
-public:
-    Control(); //the creator
-    ~Control();  //destructor
+//public:
+//    Control(); //the creator
+//    ~Control();  //destructor
 
-    void init_port(); // port initialisation function
+//    void init_port(); // port initialisation function
 
-//public slots:
-    void transmitCmd(int value); // sending function
+////public slots:
+//    void transmitCmd(int value); // sending function
 
-private :
+//private :
 
-    QextSerialPort *port;
-};
+//    //QextSerialPort *port;
+//};
 
-#endif // CONTROL_H
+//#endif // CONTROL_H

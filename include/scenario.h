@@ -31,14 +31,13 @@ public:
 
   void    deleteRobotArm();
   void    Replot();
-  void    createLine(GMlib::Point<float,3> A, GMlib::Point<float,3> B);
+
 
 private:
   std::shared_ptr<Simulator> _simulator;
   QImage                     _img;
   std::shared_ptr<Controller> _controller;
   std::shared_ptr<RobotArm> _robotarm;
-  GMlib::PCurve<float, 3>* ln{nullptr};
 
 
 };

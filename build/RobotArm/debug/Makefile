@@ -851,6 +851,33 @@ src/arm.cpp.s:
 	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/arm.cpp.s
 .PHONY : src/arm.cpp.s
 
+src/control.obj: src/control.cpp.obj
+
+.PHONY : src/control.obj
+
+# target to build an object file
+src/control.cpp.obj:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/control.cpp.obj
+.PHONY : src/control.cpp.obj
+
+src/control.i: src/control.cpp.i
+
+.PHONY : src/control.i
+
+# target to preprocess a source file
+src/control.cpp.i:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/control.cpp.i
+.PHONY : src/control.cpp.i
+
+src/control.s: src/control.cpp.s
+
+.PHONY : src/control.s
+
+# target to generate assembly for a file
+src/control.cpp.s:
+	$(MAKE) -f CMakeFiles\RobotArm.dir\build.make CMakeFiles/RobotArm.dir/src/control.cpp.s
+.PHONY : src/control.cpp.s
+
 src/controller.obj: src/controller.cpp.obj
 
 .PHONY : src/controller.obj
@@ -1076,6 +1103,9 @@ help:
 	@echo ... src/arm.obj
 	@echo ... src/arm.i
 	@echo ... src/arm.s
+	@echo ... src/control.obj
+	@echo ... src/control.i
+	@echo ... src/control.s
 	@echo ... src/controller.obj
 	@echo ... src/controller.i
 	@echo ... src/controller.s

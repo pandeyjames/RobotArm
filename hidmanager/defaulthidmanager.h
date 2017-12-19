@@ -78,6 +78,7 @@ private slots:
   virtual void                      ctrl4();
   virtual void                      shft4();
   virtual void                      createSquare();
+  virtual void                      createCircle();
 
 private:
   GMlib::Camera*                    findCamera( const QString& view_name ) const;

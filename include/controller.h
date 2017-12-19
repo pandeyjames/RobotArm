@@ -10,7 +10,7 @@
 #include "parametrics/curves/gmpline.h"
 
 class Scenario;
-class Control;
+//class Control;
 
 
 class Controller: public GMlib::SceneObject {
@@ -25,6 +25,8 @@ public:
     void change_simulation(int i);
     void createSquare(GMlib::Point<float, 3> p, float len);
     void createCircle(GMlib::Point<float, 3> c,float r);
+    void createLine(GMlib::Point<float,3> A, GMlib::Point<float,3> B);
+    void insert(GMlib::Scene &scene);
 
     void restart();
 
@@ -61,10 +63,11 @@ private:
     std::shared_ptr<GMlib::PCone<float>> pentip;
     std::shared_ptr<GMlib::PSphere<float>> sph;
     std::shared_ptr<GMlib::PCircle<float>> plate;
-
-
     std::vector<std::shared_ptr<Arm>> getArm(){
         return arm;
+    }
+    std::shared_ptr<GMlib::PCurve<float, 3>> getln(){
+        return ln;
     }
     std::vector<GMlib::Point<float,3>> turn_left_target_positions;
     std::vector<GMlib::Point<float,3>> move_target_positions;
@@ -90,15 +93,15 @@ private:
     bool rotate_body_left = false;
     bool body_rotated_left = false;
 
-    double timespan = 0.16; //dt*10
+    double timespan = 0.00116;//0.16; //dt*10
     double tick =0.0;
     double rotation_speed= 2.0;
     double translation_speed=1.0;
     bool moving = false;
     GMlib::APoint<float,4> plane_center_pos;
+    std::shared_ptr<GMlib::PCurve<float, 3>> ln;
     void checkTargetPositionRange();
     bool targetrange =false;
-    Scenario* _scenario;
 
 };
 

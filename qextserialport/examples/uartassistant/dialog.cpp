@@ -178,3 +178,5 @@ void Dialog::onPortAddedOrRemoved()
 }
 
 //! [4]
+
+
